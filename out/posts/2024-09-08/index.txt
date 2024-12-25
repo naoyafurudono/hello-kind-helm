@@ -1,0 +1,164 @@
+3:I[4707,[],""]
+5:I[6423,[],""]
+6:I[2972,["972","static/chunks/972-f708ded502b3627d.js","185","static/chunks/app/layout-aa1129b13619db0b.js"],""]
+4:["id","2024-09-08","d"]
+0:["N2S61W7SgBtvfjyLIwY7-",[[["",{"children":["posts",{"children":[["id","2024-09-08","d"],{"children":["__PAGE__?{\"id\":\"2024-09-08\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["posts",{"children":[["id","2024-09-08","d"],{"children":["__PAGE__",{},[["$L1","$L2",null],null],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[[null,["$","html",null,{"lang":"ja","children":[["$","style",null,{"children":"\n[id] {\n  border: 2px solid transparent; /* 初期のボーダー */\n  transition: all 0.3s ease; /* トランジション効果 */\n  cursor: pointer; /* カーソルをポインタにする */\n}\n\n[id]:hover {\n  background-color: #f0f0f0; /* 背景色を変更 */\n  border-color: #007bff; /* ボーダーの色を変更 */\n  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* シャドウを追加 */\n}\n\n[id]:focus {\n  outline: none; /* デフォルトのアウトラインを消す */\n  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* フォーカス時の影を追加 */\n}\n\t\t"}],["$","body",null,{"children":[["$","header",null,{"children":["$","nav",null,{"children":["$","ul",null,{"children":[["$","li","/",{"children":["$","$L6",null,{"href":"/","children":"diary.nfurudono.com"}]}],["$","li","/todos/",{"children":["$","$L6",null,{"href":"/todos/","children":"todos"}]}],["$","li","https://twitter.com/furudono2",{"children":["$","$L6",null,{"href":"https://twitter.com/furudono2","children":"書いてる人のTwitter"}]}],["$","li","https://zenn.dev/nfurudono",{"children":["$","$L6",null,{"href":"https://zenn.dev/nfurudono","children":"最近の技術記事（Zenn、試しに使っています）"}]}],["$","li","https://blog.nfurudono.com",{"children":["$","$L6",null,{"href":"https://blog.nfurudono.com","children":"技術記事"}]}]]}]}]}],["$","main",null,{"children":["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[]}]}],["$","footer",null,{"children":["$","nav",null,{"children":["$","ul",null,{"children":[["$","li","/",{"children":["$","$L6",null,{"href":"/","children":"diary.nfurudono.com"}]}],["$","li","/todos/",{"children":["$","$L6",null,{"href":"/todos/","children":"todos"}]}],["$","li","https://twitter.com/furudono2",{"children":["$","$L6",null,{"href":"https://twitter.com/furudono2","children":"書いてる人のTwitter"}]}],["$","li","https://zenn.dev/nfurudono",{"children":["$","$L6",null,{"href":"https://zenn.dev/nfurudono","children":"最近の技術記事（Zenn、試しに使っています）"}]}],["$","li","https://blog.nfurudono.com",{"children":["$","$L6",null,{"href":"https://blog.nfurudono.com","children":"技術記事"}]}]]}]}]}]]}]]}]],null],null],["$L7",null]]]]
+8:T4965,<h2 id="会社でランニング" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;">会社でランニング</h2>
+<p>代々木公園で会社の人たちとランニングをしたいのだけど、荷物をどうするかとかが悩ましい。</p>
+<ul>
+<li><a href="http://www.1010.or.jp/map/item/item-cnt-355">銭湯</a>に預ける</li>
+<li>会社に置いていく
+<ul>
+<li>社員証を持って走ることになるのと、会社内をランニングの格好でうろつくことになるのがネック</li>
+<li>あと目立ちやすい</li>
+</ul>
+</li>
+<li>会社のジムに置いていく
+<ul>
+<li>走った後にシャワーを使えるのがいいところ。社員証を持って走ることになるのと、会社内をランニングの格好でうろつくことになるのがネック</li>
+</ul>
+</li>
+</ul>
+<p>こう思うとジムで走る人の気持ちがわかってくる。あれはランニングの品質を犠牲にする代わりに着替えとかの便利を手に入れているのだろう。部室って偉大だったんだな。あと（地元の）オリエンティアが色々ガサツで公園でてきとうに着替えて荷物はその辺に置いておくスタイルだったので気が付かなかった。</p>
+<p>今度一回一人かフットワーク軽い人（いれば）と銭湯から走りに行ってみようと思う。代々木公園のことほとんど知らなくて人を誘うときに何を期待してもらって良いかわからないので。</p>
+<h2 id="今日のtodo" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;">今日のTODO</h2>
+<ul class="contains-task-list">
+<li class="task-list-item"><svg id="Opz6VECDEU1Jyy95zxwDVOgLViSehrNrllkofkxq22g" viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg><input type="checkbox" checked disabled> 洗い物</li>
+<li class="task-list-item"><svg id="oPCI2vikX0DSpy_jiHhn_p59V2G0XsRbjgDbm57MUEc" viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg><input type="checkbox" checked disabled> 洗濯</li>
+<li class="task-list-item"><svg id="52YKTSG3XTZwaH0CKvGIBHztz93j-_ZVtA0LMaDOZx8" viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg><input type="checkbox" checked disabled> 部屋の掃除
+<ul>
+<li><del>何か今までにない掃除を一個導入したい。何を最高にしようかな</del> 換気してるのでクリアしたということで</li>
+<li>ルンバを動かすのと、机の上を片付けることがマストかな。あと干した服をしまう</li>
+</ul>
+</li>
+<li><del>次の本棚のパーツの切り出し方を決める</del> 本を読むのを優先する。来週本棚を作ろうと思うので要求だけ出しておく。</li>
+<li class="task-list-item"><svg id="gK8WyStlsGVoUR-ourPHryGe46LIYCi2WFdWSO1m91M" viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg><input type="checkbox" checked disabled> 走る</li>
+<li class="task-list-item"><svg id="9-SbbqHtCeOLFEG6oEq9qzRGowSpDGsY1Ti5OeulAA0" viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg><input type="checkbox" checked disabled> 夕飯
+<ul>
+<li><del>久しぶりにとりにくとか食べたい</del> 買い出しで選ばられたのは鰹のたたきでした</li>
+<li>野菜はどうしよ。もやしかな、適当に炒める</li>
+<li>結局走ったあとは刺身を食べる気にはならず、プロテインを牛乳で飲んだのと、もやしとひき肉炒めたやつで満足したのだった</li>
+<li>本屋に行ってからお腹が減ったので鰹のたたきも結局食べた。うどんとビールも</li>
+</ul>
+</li>
+<li class="task-list-item"><svg id="s17N5jYDHwyXrnzEFROo3x0JG8B7ipAhOEDiF0OjQcc" viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg><input type="checkbox" checked disabled> WPのあれを <del>全部</del> いい感じに読む
+<ul>
+<li>結構面白い。オブジェクト指向じゃなく関数型っぽく処理を合成するようなフレームワークはあんな感じになるのだろうと感じた。</li>
+<li>まだまだ残りがあるので明日も読んでいく。</li>
+</ul>
+</li>
+<li><del>チェックボックスに対応する。GitHub flaveredマークダウンに対応するプラグインを入れるか迷う。あれにベッタリになると楽ではありそうだが、そこから抜け出してみたい気持ちもあるので。あと、引用でそれっぽいスタイルに変化させるのはあまり好きじゃない。Madokoみたいな独自に汎用ブロック定義するのが好き。</del> そんなに心躍るものでもないし、特に誰かが幸せになるわけでもないのでやらない</li>
+<li class="task-list-item"><svg id="ox-jvI7NHi7wZ0T2fg4-FZnCXQ6QXzCZZZsQKrNpIuw" viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg><input type="checkbox" checked disabled> 池袋のジュンク堂いく
+<ul>
+<li>HTML5の本をあそこでみて面白そうと思ったのだが、本の名前を思い出せなかった。インターネットで探したけど見つけられず。気になる。</li>
+</ul>
+</li>
+<li class="task-list-item"><svg id="3X7A8b_hsTtmQXHRxVCDZn5jPmvi7CjO_XfHHKT8Rso" viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg><input type="checkbox" disabled> 検索機能を日記に入れたい
+<ul>
+<li>ブラウザで完結させたいわね。まずはキャッシュを使わずに実装して、そのあとでネットワークの節約を試みるかな。</li>
+<li>これは今日じゃないかな。来週とか</li>
+</ul>
+</li>
+<li class="task-list-item"><svg id="-zhn74qJz0mbhAyiz1pAn3ThToCPAKGZ2VJneVmP31k" viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg><input type="checkbox" checked disabled> TODOをリストアップする機能欲しいな。日記に箇条書きしたTODOアイテムで未解決なものに勝手にIDを降って、それを一覧表示するページを作る。便利そう。そういう、文章のアイテム（Notionでいうブロック）ごとに集計して新しい（記事ではない）切り方で表示する機能は楽しそう。目次はその一例かな。その辺りの意味論について議論している論文があったのでまた読んでもいいかも。まずは具体例としてこのTODOのやつを作るのが良いだろうけど
+<ul>
+<li>実装した <a href="https://diary.nfurudono.com/todos/">https://diary.nfurudono.com/todos/</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="フロントエンドの基礎技術" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;">フロントエンドの基礎技術</h2>
+<p>ReactやVue.jsとかNext.jsは基礎ではないはず。HTMLは割と基礎っぽいかな。ネットワークのあれこれとかブラウザのレンダリングの仕組みのあたりは基礎だと思って良さそう。CSSもまあ基礎っぽい気もするけど、解釈するのは結局ブラウザなので、ブラウザのことを知っている人が高級なCSSを勉強するのが、基礎を押さえた上での応用の会得、みたいな流れを踏むように思う。</p>
+<p>HTMLとかJSを解釈・処理したり、ネットワークのあれこれをするのはブラウザなので、Webのあれこれをやるならブラウザのことを知らないと楽しくないだろう。バックエンドだけやるのでは片手落ちなはず。</p>
+<p>HTMLの能力を理解した上でフロントエンドをやりたいわね。ブラウザはHTMLを大事に解釈するはずなので。</p>
+<h2 id="本棚の要求" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;">本棚の要求</h2>
+<p>2個目の本棚が欲しい。一個目はいい感じにできたが全ての本を並べられていないのでもう一個作ろうと思っている。全く同じ寸法でもいいし、もうちょっと詰めてもいいかもと思っている。1個目の寸法はTAPLとかPFPL、雑誌がギリギリ入るサイズにしているので余裕があるのだ。奥行きを変えるのはだるそうだけど、それぞれの段の高さは小さくしてもいいだろう。オライリーのでかい方のサイズがギリギリ入る高さを想定している。それで段数が増えるならそうしようと思う。増えないなら揃える。材質は同じでいいかな。パイン集成材を使ってみたいがちょい高いので。</p>
+<p>あとはあれか、オライリーの小さいサイズに合わせた段があっても良いかもとは思っている。思っているけどまだいいかな。本屋さんみたいな並べ方ではなく図書館みたいな並べ方に価値があると思っているので、あまり小さいものに合わせると幸せになれない。やるなら三脚目を作るとき。</p>
+<p>今回の本棚に何かひと工夫加えたい気もする。とはいえシンプルさを落としたくはないのでちょっと困る。やはり材料を変えるのは楽しそうではあるんだよな。板が厚いのと杉の木目がそんなに綺麗な感じになってないのが気になっている。</p>
+<p>あれかな、本棚自体はいいので分類するあれ（ちょこっと飛び出て分類名が見えるやつ）を導入するのはどうだろう。あるいは棚板にラベリングしてしまうとか。棚板ごとに分類を分けるの、余裕が生まれて使いやすそう。ラベリングはどうするのがいいかな。まずは分類からか。そのためにも本棚を追加して一覧しないと。</p>
+<h2 id="グラスを買った" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;">グラスを買った</h2>
+<p>ビールとかを飲むようなタンブラーを買った。ビールはうまかった。ISEKADOのペールエールを飲んだのだった。グラスのサイズはちょうどショート缶が入るくらい。</p>2:[["$","article",null,{"children":[["$","h1",null,{"children":"2024-09-08"}],["$","time",null,{"children":"2024-09-08T15:39:11+09:00"}],["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$8"}}]]}],["$","span",null,{"style":{"marginInline":"5px"},"children":["$","a",null,{"href":"/posts/2024-08-21","children":"< 2024-08-21"}]}],["$","span",null,{"style":{"marginInline":"5px"},"children":["$","a",null,{"href":"/posts/2024-09-13","children":"2024-09-13 >"}]}]]
+7:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"2024-09-08 | diary.nfurudono.com"}],["$","meta","3",{"name":"description","content":"代々木公園で会社の人たちとランニングをしたいのだけど、荷物をどうするかとかが悩ましい。"}],["$","link","4",{"rel":"author","href":"https://blog.nfurudono.com/profile/"}],["$","meta","5",{"name":"author","content":"Naoya Furudono"}]]
+1:null

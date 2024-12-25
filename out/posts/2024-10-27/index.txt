@@ -1,0 +1,119 @@
+3:I[4707,[],""]
+5:I[6423,[],""]
+6:I[2972,["972","static/chunks/972-f708ded502b3627d.js","185","static/chunks/app/layout-aa1129b13619db0b.js"],""]
+4:["id","2024-10-27","d"]
+0:["N2S61W7SgBtvfjyLIwY7-",[[["",{"children":["posts",{"children":[["id","2024-10-27","d"],{"children":["__PAGE__?{\"id\":\"2024-10-27\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["posts",{"children":[["id","2024-10-27","d"],{"children":["__PAGE__",{},[["$L1","$L2",null],null],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[[null,["$","html",null,{"lang":"ja","children":[["$","style",null,{"children":"\n[id] {\n  border: 2px solid transparent; /* 初期のボーダー */\n  transition: all 0.3s ease; /* トランジション効果 */\n  cursor: pointer; /* カーソルをポインタにする */\n}\n\n[id]:hover {\n  background-color: #f0f0f0; /* 背景色を変更 */\n  border-color: #007bff; /* ボーダーの色を変更 */\n  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* シャドウを追加 */\n}\n\n[id]:focus {\n  outline: none; /* デフォルトのアウトラインを消す */\n  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* フォーカス時の影を追加 */\n}\n\t\t"}],["$","body",null,{"children":[["$","header",null,{"children":["$","nav",null,{"children":["$","ul",null,{"children":[["$","li","/",{"children":["$","$L6",null,{"href":"/","children":"diary.nfurudono.com"}]}],["$","li","/todos/",{"children":["$","$L6",null,{"href":"/todos/","children":"todos"}]}],["$","li","https://twitter.com/furudono2",{"children":["$","$L6",null,{"href":"https://twitter.com/furudono2","children":"書いてる人のTwitter"}]}],["$","li","https://zenn.dev/nfurudono",{"children":["$","$L6",null,{"href":"https://zenn.dev/nfurudono","children":"最近の技術記事（Zenn、試しに使っています）"}]}],["$","li","https://blog.nfurudono.com",{"children":["$","$L6",null,{"href":"https://blog.nfurudono.com","children":"技術記事"}]}]]}]}]}],["$","main",null,{"children":["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[]}]}],["$","footer",null,{"children":["$","nav",null,{"children":["$","ul",null,{"children":[["$","li","/",{"children":["$","$L6",null,{"href":"/","children":"diary.nfurudono.com"}]}],["$","li","/todos/",{"children":["$","$L6",null,{"href":"/todos/","children":"todos"}]}],["$","li","https://twitter.com/furudono2",{"children":["$","$L6",null,{"href":"https://twitter.com/furudono2","children":"書いてる人のTwitter"}]}],["$","li","https://zenn.dev/nfurudono",{"children":["$","$L6",null,{"href":"https://zenn.dev/nfurudono","children":"最近の技術記事（Zenn、試しに使っています）"}]}],["$","li","https://blog.nfurudono.com",{"children":["$","$L6",null,{"href":"https://blog.nfurudono.com","children":"技術記事"}]}]]}]}]}]]}]]}]],null],null],["$L7",null]]]]
+8:T337e,<h2 id="結婚式準備" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;">結婚式準備</h2>
+<p>友達の結婚式に今度出席するので真面目に準備してみる。普段スーツを着ないので礼服を着るのはコスプレみたいでドキドキする。</p>
+<ul class="contains-task-list">
+<li class="task-list-item"><svg id="RTMNP0MhtIMywZLexKxKW21jCziapU5EK7tsTDsZsdc" viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg><input type="checkbox" checked disabled> 礼服が入るか検証</li>
+<li class="task-list-item"><svg id="SZJ5otS9VpCQuyoVfyV_zKuPVTo5x0su72WQa4U6lxM" viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg><input type="checkbox" checked disabled> シャツを買う</li>
+<li class="task-list-item"><svg id="L-XBW-ehr7Uy9c21nm9Ngm_iiXMmoqtELkTDGkwYtcc" viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg><input type="checkbox" checked disabled> ネクタイと胸につけるハンカチ買う
+<ul>
+<li>ネクタイの練習もしておかないとな</li>
+</ul>
+</li>
+<li class="task-list-item"><svg id="jHFMmSQ4YI4HE_-X_-kBGFgFF5t2RcnOzXlGRHoE-T0" viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg><input type="checkbox" checked disabled> 靴を手入れする</li>
+<li class="task-list-item"><svg id="vQzCBR-6Bf0uhCI8Seyb-VyHE9zVrGyQkGlwkQSaSq8" viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg><input type="checkbox" checked disabled> ワックス買って練習する</li>
+<li class="task-list-item"><svg id="9Nfvx5ld-e5zFfNkn4i9LwplaiR5Qd8srA3pGzXeHzo" viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg><input type="checkbox" checked disabled> 髪をいい感じに切ってもらうための店を見つける
+<ul>
+<li>人に聞くのがいいかな</li>
+<li>2 or 3日に行こう（最近切ったばかりでできることあるのか？）</li>
+</ul>
+</li>
+<li>その他マナーを学んでおく</li>
+</ul>
+<h2 id="sqlのユーザ管理" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;">SQLのユーザ管理</h2>
+<p>アプリケーションの開発・運用をしているとSQLのユーザをそれなりに作ることになる。データベースもしかり。それらをIaCな感じで管理したいがベストプラクティスをまだ知らない。</p>
+<p>管理したいユーザの情報は以下の通り</p>
+<ul>
+<li>ユーザ名（ホストを含む）</li>
+<li>Grant</li>
+<li>パスワード</li>
+</ul>
+<p>簡単なのは、ユーザ名とパスワードだけ1Passとかで管理して、他は動いているものを見に行く方法。管理しない考え方。実態と齟齬がないことは良いことだが、設定を見るためには管理者権限が必要だしいちいち接続するのも面倒。また、複製が面倒なのも問題だし、設定の経緯をコメントに残したりバージョン管理したりできないので組織としてスケールしない。</p>
+<p>Terraformで管理するのはいい線行きそう。ネックはパスワードかな。パスワードを平文で保持しないことを達成しようと思うと途端にややこしくなりそう。運用ではパスワードにシュッとアクセスしたいケースがあるため、他の解決策と併用するのが良いだろう。Grantとユーザ名、変更の経緯の管理には向いていそう。</p>
+<p>Terraformと1passを組み合わせるのが綺麗だろうと思った。ユーザ名は不変（変更したくなったら作り直す）にしておけば、色々いい感じになるんじゃないかな。</p>
+<h2 id="oauthのベストプラクティス" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;">OAuthのベストプラクティス</h2>
+<p><a href="https://datatracker.ietf.org/doc/html/draft-ietf-oauth-security-topics">https://datatracker.ietf.org/doc/html/draft-ietf-oauth-security-topics</a> が良さげ。Refresh tokenをどこにどれくらいの期間保持するとか、どういうインターバルで無効化するとかで悩む。あとaccess tokenはauthorizationヘッダに突っ込むのが吉？とか。</p>
+<h2 id="about-a-philosophy-of-software-design" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;">about: A Philosophy of Software Design</h2>
+<p>ソフトウェア設計の指針をまとめた本で定番だけど日本語訳されてない（はず、2022年に買ったときはそうだった）。APIを実装・設計したりそれに付随してコードレベルのモジュール（クラスとかで表現するようなレイヤ）を設計するときに役立つ指針をくれる。</p>
+<p>僕がプログラミングのレビューをしたり、自分でプログラミングしたりするときに気にすることは割とここから学んだ（言語化しただけ？）と思う。インターネットでHTMLが公開されてたらどんなに嬉しいだろうと思う。レビューのときに「ここを読んでください」をできるので。</p>
+<p>言語とかパラダイムに依存しない、プログラミング一般について使える知見が書かれているので繰り返し読む価値のあるものだと思うし、実際そうしている。以下のそれぞれのタイミングで読んだが、毎回楽しく思っている。</p>
+<ol>
+<li>がっつりプログラミング始める前</li>
+<li>自分でコードを書くようになってから</li>
+<li>レビューをするようになってから</li>
+</ol>
+<p>広くいろんな人に使われるAPIを設計するようになるとまた見える世界が違うのだろうと思う。</p>
+<h2 id="about-マスタリングapiアーキテクチャ" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;">about: マスタリングAPIアーキテクチャ</h2>
+<p>最近（日本語訳が）発売されったぽい本。内容的には流行り廃りがありそうな内容を扱っていて10年後には古くなっていそう。例えば第1章の「APIの設計・構築・仕様化」ではConnect使えばいいじゃないと思った。</p>
+<p>とはいえこれまで10年くらいのプラクティスがおそらくいい感じに説明されていて、今どきのクラウドでいろんなサービスを動かして連携させるスタイルのアプリケーションをどうやって作っていくかを体系的に述べているように思う。ぼくはそのあたりを勉強中の身なので偉そうなことを言ったり評価をしたりできないのだけど、これまで断片的に学んで来たこと（そして腑に落としたり手を動かすに至らなかったこと）の使い所を自分の中で描けるようになっていると感じる。ほんまかいなと思うこともあるので、盲目的に信じるというよりは質の高い雑誌のような意識で読んでいる。</p>2:[["$","article",null,{"children":[["$","h1",null,{"children":"2024-10-27"}],["$","time",null,{"children":"2024-10-27T01:20:03+09:00"}],["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$8"}}]]}],["$","span",null,{"style":{"marginInline":"5px"},"children":["$","a",null,{"href":"/posts/2024-10-26","children":"< 2024-10-26"}]}],["$","span",null,{"style":{"marginInline":"5px"},"children":["$","a",null,{"href":"/posts/2024-10-28","children":"2024-10-28 >"}]}]]
+7:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"2024-10-27 | diary.nfurudono.com"}],["$","meta","3",{"name":"description","content":"友達の結婚式に今度出席するので真面目に準備してみる。普段スーツを着ないので礼服を着るのはコスプレみたいでドキドキする。"}],["$","link","4",{"rel":"author","href":"https://blog.nfurudono.com/profile/"}],["$","meta","5",{"name":"author","content":"Naoya Furudono"}]]
+1:null

@@ -1,0 +1,99 @@
+<!DOCTYPE html><html lang="ja"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="preload" as="script" fetchPriority="low" href="/_next/static/chunks/webpack-100b9e646d9c912e.js"/><script src="/_next/static/chunks/fd9d1056-749e5812300142af.js" async=""></script><script src="/_next/static/chunks/117-0773d3d7d828a895.js" async=""></script><script src="/_next/static/chunks/main-app-47eeba86d2ddfbea.js" async=""></script><script src="/_next/static/chunks/972-f708ded502b3627d.js" async=""></script><script src="/_next/static/chunks/app/layout-aa1129b13619db0b.js" async=""></script><title>2024-06-25 | diary.nfurudono.com</title><meta name="description" content="本棚を自作する。清く正しい本棚の作り方が参考になりそうなので通読する。"/><link rel="author" href="https://blog.nfurudono.com/profile/"/><meta name="author" content="Naoya Furudono"/><script src="/_next/static/chunks/polyfills-42372ed130431b0a.js" noModule=""></script></head><style>
+[id] {
+  border: 2px solid transparent; /* 初期のボーダー */
+  transition: all 0.3s ease; /* トランジション効果 */
+  cursor: pointer; /* カーソルをポインタにする */
+}
+
+[id]:hover {
+  background-color: #f0f0f0; /* 背景色を変更 */
+  border-color: #007bff; /* ボーダーの色を変更 */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* シャドウを追加 */
+}
+
+[id]:focus {
+  outline: none; /* デフォルトのアウトラインを消す */
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* フォーカス時の影を追加 */
+}
+		</style><body><header><nav><ul><li><a href="/">diary.nfurudono.com</a></li><li><a href="/todos/">todos</a></li><li><a href="https://twitter.com/furudono2">書いてる人のTwitter</a></li><li><a href="https://zenn.dev/nfurudono">最近の技術記事（Zenn、試しに使っています）</a></li><li><a href="https://blog.nfurudono.com">技術記事</a></li></ul></nav></header><main><article><h1>2024-06-25</h1><time>2024-06-25T01:24:44+09:00</time><div><p>本棚を自作する。<a href="https://www.todaproduction.com/books/bkshelf/bkfrm.htm">清く正しい本棚の作り方</a>が参考になりそうなので通読する。</p>
+<p>通読した。以下の手順かな。今度ホームセンター行こう。</p>
+<ul>
+<li>材料の検討をつける
+<ul>
+<li>21mm以上の厚さでカット可能でそれなりのサイズの板が必要</li>
+<li>パイン集製剤はよさそう</li>
+</ul>
+</li>
+<li>設計する
+<ul>
+<li>自分の本のサイズとその量を見積もるかな</li>
+<li>僕の場合は専門書が3サイズ（A5?,A4?,教科書？）あるのと小説と漫画がある。それぞれのサイズを計り量を見積もる</li>
+<li>その上で高さ180cmくらいかなのものを一旦設計して、入手できる材料のサイズを鑑みて調整する</li>
+</ul>
+</li>
+<li>材料を調達する
+<ul>
+<li>購入・裁断・運び入れが課題</li>
+</ul>
+</li>
+<li>組み立て
+<ul>
+<li>補助線の書き込みと穴あけ、ねじ止めとボンドでの固定がやること</li>
+</ul>
+</li>
+<li>研磨
+<ul>
+<li>エッジの処理とかはこのタイミングで一度やる</li>
+</ul>
+</li>
+<li>塗装
+<ul>
+<li>材料によるがニスとかでいいかな</li>
+<li>蜜蝋とか油は本への影響がありそうでちょっと怖い</li>
+</ul>
+</li>
+<li>乾かす
+<ul>
+<li>塗料が乾くまで外で乾かす。天気が大切</li>
+</ul>
+</li>
+<li>研磨
+<ul>
+<li>最後にシュッとやれるとよさそう</li>
+</ul>
+</li>
+</ul>
+<!--
+# モノレポの話
+
+## 一個め
+
+- 開発環境一発で立ち上げたいのは本当にそう
+- codeownerとsentryを連携するとかもあるとのこと。運用にモノレポを効かせられる
+- gradleのビルドキャッシュをCIサーバからローカルに落とせる。テストもそこに含める。テストの単位ってどうなっているんだろう
+- ドメイン境界でモジュールを分割して依存関係を作り上げるなるほど
+- 依存関係のグラフを見るのはやってみて良さそう
+- ドメイン境界を見つけるために試行錯誤で変化するための基盤としてのモノレポなるほど
+
+## カミナシ
+
+- 管理者のWeb (React)
+- ユーザのモバイル (React Natibe)j
+
+- `node_modules` を共有してて辛い
+    - ここを分離できてればカミナシでもいけたかも
+- 依存関係の管理がうまく行ってなかった。
+- Webとモバイルを一緒にリリースしていて細かくリリースできなかったとのこと
+- `api_packages` (openAPI定義)をクライアントでしか使ってなかった。これをサーバに移した
+    - gitのsubtree mergeを使った
+    - npmパッケージをサーバでのopenAPI定義の更新の度にデプロイするようにした
+
+## アソビュー
+
+- https://www.google.com/search?q=advantages+and+disadvantages+of+a+monorithic+repo&oq=advantages+and+disadvantages+of+a+monorithic+repo&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCTE2NzgwajBqN6gCALACAA&sourceid=chrome&ie=UTF-8
+- 認知負荷の低下をメリットとして挙げがち
+- 技術的課題というより文化の問題は確かに
+- 移行のために haraban/tomonoを使った
+- feature flagや自動テスト足した
+    - feature flagの使い方きのさんな
+--></div></article><span style="margin-inline:5px"><a href="/posts/2024-06-08">&lt; 2024-06-08</a></span><span style="margin-inline:5px"><a href="/posts/2024-07-06">2024-07-06 &gt;</a></span></main><footer><nav><ul><li><a href="/">diary.nfurudono.com</a></li><li><a href="/todos/">todos</a></li><li><a href="https://twitter.com/furudono2">書いてる人のTwitter</a></li><li><a href="https://zenn.dev/nfurudono">最近の技術記事（Zenn、試しに使っています）</a></li><li><a href="https://blog.nfurudono.com">技術記事</a></li></ul></nav></footer><script src="/_next/static/chunks/webpack-100b9e646d9c912e.js" async=""></script><script>(self.__next_f=self.__next_f||[]).push([0]);self.__next_f.push([2,null])</script><script>self.__next_f.push([1,"1:I[2846,[],\"\"]\n4:I[4707,[],\"\"]\n6:I[6423,[],\"\"]\n7:I[2972,[\"972\",\"static/chunks/972-f708ded502b3627d.js\",\"185\",\"static/chunks/app/layout-aa1129b13619db0b.js\"],\"\"]\n9:I[1060,[],\"\"]\n5:[\"id\",\"2024-06-25\",\"d\"]\na:[]\n"])</script><script>self.__next_f.push([1,"0:[\"$\",\"$L1\",null,{\"buildId\":\"N2S61W7SgBtvfjyLIwY7-\",\"assetPrefix\":\"\",\"urlParts\":[\"\",\"posts\",\"2024-06-25\",\"\"],\"initialTree\":[\"\",{\"children\":[\"posts\",{\"children\":[[\"id\",\"2024-06-25\",\"d\"],{\"children\":[\"__PAGE__?{\\\"id\\\":\\\"2024-06-25\\\"}\",{}]}]}]},\"$undefined\",\"$undefined\",true],\"initialSeedData\":[\"\",{\"children\":[\"posts\",{\"children\":[[\"id\",\"2024-06-25\",\"d\"],{\"children\":[\"__PAGE__\",{},[[\"$L2\",\"$L3\",null],null],null]},[null,[\"$\",\"$L4\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\",\"posts\",\"children\",\"$5\",\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"notFoundStyles\":\"$undefined\"}]],null]},[null,[\"$\",\"$L4\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\",\"posts\",\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"notFoundStyles\":\"$undefined\"}]],null]},[[null,[\"$\",\"html\",null,{\"lang\":\"ja\",\"children\":[[\"$\",\"style\",null,{\"children\":\"\\n[id] {\\n  border: 2px solid transparent; /* 初期のボーダー */\\n  transition: all 0.3s ease; /* トランジション効果 */\\n  cursor: pointer; /* カーソルをポインタにする */\\n}\\n\\n[id]:hover {\\n  background-color: #f0f0f0; /* 背景色を変更 */\\n  border-color: #007bff; /* ボーダーの色を変更 */\\n  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* シャドウを追加 */\\n}\\n\\n[id]:focus {\\n  outline: none; /* デフォルトのアウトラインを消す */\\n  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* フォーカス時の影を追加 */\\n}\\n\\t\\t\"}],[\"$\",\"body\",null,{\"children\":[[\"$\",\"header\",null,{\"children\":[\"$\",\"nav\",null,{\"children\":[\"$\",\"ul\",null,{\"children\":[[\"$\",\"li\",\"/\",{\"children\":[\"$\",\"$L7\",null,{\"href\":\"/\",\"children\":\"diary.nfurudono.com\"}]}],[\"$\",\"li\",\"/todos/\",{\"children\":[\"$\",\"$L7\",null,{\"href\":\"/todos/\",\"children\":\"todos\"}]}],[\"$\",\"li\",\"https://twitter.com/furudono2\",{\"children\":[\"$\",\"$L7\",null,{\"href\":\"https://twitter.com/furudono2\",\"children\":\"書いてる人のTwitter\"}]}],[\"$\",\"li\",\"https://zenn.dev/nfurudono\",{\"children\":[\"$\",\"$L7\",null,{\"href\":\"https://zenn.dev/nfurudono\",\"children\":\"最近の技術記事（Zenn、試しに使っています）\"}]}],[\"$\",\"li\",\"https://blog.nfurudono.com\",{\"children\":[\"$\",\"$L7\",null,{\"href\":\"https://blog.nfurudono.com\",\"children\":\"技術記事\"}]}]]}]}]}],[\"$\",\"main\",null,{\"children\":[\"$\",\"$L4\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":\"404\"}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],\"notFoundStyles\":[]}]}],[\"$\",\"footer\",null,{\"children\":[\"$\",\"nav\",null,{\"children\":[\"$\",\"ul\",null,{\"children\":[[\"$\",\"li\",\"/\",{\"children\":[\"$\",\"$L7\",null,{\"href\":\"/\",\"children\":\"diary.nfurudono.com\"}]}],[\"$\",\"li\",\"/todos/\",{\"children\":[\"$\",\"$L7\",null,{\"href\":\"/todos/\",\"children\":\"todos\"}]}],[\"$\",\"li\",\"https://twitter.com/furudono2\",{\"children\":[\"$\",\"$L7\",null,{\"href\":\"https://twitter.com/furudono2\",\"children\":\"書いてる人のTwitter\"}]}],[\"$\",\"li\",\"https://zenn.dev/nfurudono\",{\"children\":[\"$\",\"$L7\",null,{\"href\":\"https://zenn.dev/nfurudono\",\"children\":\"最近の技術記事（Zenn、試しに使っています）\"}]}],[\"$\",\"li\",\"https://blog.nfurudono.com\",{\"children\":[\"$\",\"$L7\",null,{\"href\":\"https://blog.nfurudono.com\",\"children\":\"技術記事\"}]}]]}]}]}]]}]]}]],null],null],\"couldBeIntercepted\":false,\"initialHead\":[null,\"$L8\"],\"globalErrorComponent\":\"$9\",\"missingSlots\":\"$Wa\"}]\n"])</script><script>self.__next_f.push([1,"b:Td04,"])</script><script>self.__next_f.push([1,"\u003cp\u003e本棚を自作する。\u003ca href=\"https://www.todaproduction.com/books/bkshelf/bkfrm.htm\"\u003e清く正しい本棚の作り方\u003c/a\u003eが参考になりそうなので通読する。\u003c/p\u003e\n\u003cp\u003e通読した。以下の手順かな。今度ホームセンター行こう。\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e材料の検討をつける\n\u003cul\u003e\n\u003cli\u003e21mm以上の厚さでカット可能でそれなりのサイズの板が必要\u003c/li\u003e\n\u003cli\u003eパイン集製剤はよさそう\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e設計する\n\u003cul\u003e\n\u003cli\u003e自分の本のサイズとその量を見積もるかな\u003c/li\u003e\n\u003cli\u003e僕の場合は専門書が3サイズ（A5?,A4?,教科書？）あるのと小説と漫画がある。それぞれのサイズを計り量を見積もる\u003c/li\u003e\n\u003cli\u003eその上で高さ180cmくらいかなのものを一旦設計して、入手できる材料のサイズを鑑みて調整する\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e材料を調達する\n\u003cul\u003e\n\u003cli\u003e購入・裁断・運び入れが課題\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e組み立て\n\u003cul\u003e\n\u003cli\u003e補助線の書き込みと穴あけ、ねじ止めとボンドでの固定がやること\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e研磨\n\u003cul\u003e\n\u003cli\u003eエッジの処理とかはこのタイミングで一度やる\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e塗装\n\u003cul\u003e\n\u003cli\u003e材料によるがニスとかでいいかな\u003c/li\u003e\n\u003cli\u003e蜜蝋とか油は本への影響がありそうでちょっと怖い\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e乾かす\n\u003cul\u003e\n\u003cli\u003e塗料が乾くまで外で乾かす。天気が大切\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e研磨\n\u003cul\u003e\n\u003cli\u003e最後にシュッとやれるとよさそう\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003c!--\n# モノレポの話\n\n## 一個め\n\n- 開発環境一発で立ち上げたいのは本当にそう\n- codeownerとsentryを連携するとかもあるとのこと。運用にモノレポを効かせられる\n- gradleのビルドキャッシュをCIサーバからローカルに落とせる。テストもそこに含める。テストの単位ってどうなっているんだろう\n- ドメイン境界でモジュールを分割して依存関係を作り上げるなるほど\n- 依存関係のグラフを見るのはやってみて良さそう\n- ドメイン境界を見つけるために試行錯誤で変化するための基盤としてのモノレポなるほど\n\n## カミナシ\n\n- 管理者のWeb (React)\n- ユーザのモバイル (React Natibe)j\n\n- `node_modules` を共有してて辛い\n    - ここを分離できてればカミナシでもいけたかも\n- 依存関係の管理がうまく行ってなかった。\n- Webとモバイルを一緒にリリースしていて細かくリリースできなかったとのこと\n- `api_packages` (openAPI定義)をクライアントでしか使ってなかった。これをサーバに移した\n    - gitのsubtree mergeを使った\n    - npmパッケージをサーバでのopenAPI定義の更新の度にデプロイするようにした\n\n## アソビュー\n\n- https://www.google.com/search?q=advantages+and+disadvantages+of+a+monorithic+repo\u0026oq=advantages+and+disadvantages+of+a+monorithic+repo\u0026gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCTE2NzgwajBqN6gCALACAA\u0026sourceid=chrome\u0026ie=UTF-8\n- 認知負荷の低下をメリットとして挙げがち\n- 技術的課題というより文化の問題は確かに\n- 移行のために haraban/tomonoを使った\n- feature flagや自動テスト足した\n    - feature flagの使い方きのさんな\n--\u003e"])</script><script>self.__next_f.push([1,"3:[[\"$\",\"article\",null,{\"children\":[[\"$\",\"h1\",null,{\"children\":\"2024-06-25\"}],[\"$\",\"time\",null,{\"children\":\"2024-06-25T01:24:44+09:00\"}],[\"$\",\"div\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"$b\"}}]]}],[\"$\",\"span\",null,{\"style\":{\"marginInline\":\"5px\"},\"children\":[\"$\",\"a\",null,{\"href\":\"/posts/2024-06-08\",\"children\":\"\u003c 2024-06-08\"}]}],[\"$\",\"span\",null,{\"style\":{\"marginInline\":\"5px\"},\"children\":[\"$\",\"a\",null,{\"href\":\"/posts/2024-07-06\",\"children\":\"2024-07-06 \u003e\"}]}]]\n8:[[\"$\",\"meta\",\"0\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}],[\"$\",\"meta\",\"1\",{\"charSet\":\"utf-8\"}],[\"$\",\"title\",\"2\",{\"children\":\"2024-06-25 | diary.nfurudono.com\"}],[\"$\",\"meta\",\"3\",{\"name\":\"description\",\"content\":\"本棚を自作する。清く正しい本棚の作り方が参考になりそうなので通読する。\"}],[\"$\",\"link\",\"4\",{\"rel\":\"author\",\"href\":\"https://blog.nfurudono.com/profile/\"}],[\"$\",\"meta\",\"5\",{\"name\":\"author\",\"content\":\"Naoya Furudono\"}]]\n2:null\n"])</script></body></html>

@@ -1,0 +1,128 @@
+3:I[4707,[],""]
+5:I[6423,[],""]
+6:I[2972,["972","static/chunks/972-f708ded502b3627d.js","185","static/chunks/app/layout-aa1129b13619db0b.js"],""]
+4:["id","2024-10-14","d"]
+0:["N2S61W7SgBtvfjyLIwY7-",[[["",{"children":["posts",{"children":[["id","2024-10-14","d"],{"children":["__PAGE__?{\"id\":\"2024-10-14\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["posts",{"children":[["id","2024-10-14","d"],{"children":["__PAGE__",{},[["$L1","$L2",null],null],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[[null,["$","html",null,{"lang":"ja","children":[["$","style",null,{"children":"\n[id] {\n  border: 2px solid transparent; /* 初期のボーダー */\n  transition: all 0.3s ease; /* トランジション効果 */\n  cursor: pointer; /* カーソルをポインタにする */\n}\n\n[id]:hover {\n  background-color: #f0f0f0; /* 背景色を変更 */\n  border-color: #007bff; /* ボーダーの色を変更 */\n  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* シャドウを追加 */\n}\n\n[id]:focus {\n  outline: none; /* デフォルトのアウトラインを消す */\n  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* フォーカス時の影を追加 */\n}\n\t\t"}],["$","body",null,{"children":[["$","header",null,{"children":["$","nav",null,{"children":["$","ul",null,{"children":[["$","li","/",{"children":["$","$L6",null,{"href":"/","children":"diary.nfurudono.com"}]}],["$","li","/todos/",{"children":["$","$L6",null,{"href":"/todos/","children":"todos"}]}],["$","li","https://twitter.com/furudono2",{"children":["$","$L6",null,{"href":"https://twitter.com/furudono2","children":"書いてる人のTwitter"}]}],["$","li","https://zenn.dev/nfurudono",{"children":["$","$L6",null,{"href":"https://zenn.dev/nfurudono","children":"最近の技術記事（Zenn、試しに使っています）"}]}],["$","li","https://blog.nfurudono.com",{"children":["$","$L6",null,{"href":"https://blog.nfurudono.com","children":"技術記事"}]}]]}]}]}],["$","main",null,{"children":["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[]}]}],["$","footer",null,{"children":["$","nav",null,{"children":["$","ul",null,{"children":[["$","li","/",{"children":["$","$L6",null,{"href":"/","children":"diary.nfurudono.com"}]}],["$","li","/todos/",{"children":["$","$L6",null,{"href":"/todos/","children":"todos"}]}],["$","li","https://twitter.com/furudono2",{"children":["$","$L6",null,{"href":"https://twitter.com/furudono2","children":"書いてる人のTwitter"}]}],["$","li","https://zenn.dev/nfurudono",{"children":["$","$L6",null,{"href":"https://zenn.dev/nfurudono","children":"最近の技術記事（Zenn、試しに使っています）"}]}],["$","li","https://blog.nfurudono.com",{"children":["$","$L6",null,{"href":"https://blog.nfurudono.com","children":"技術記事"}]}]]}]}]}]]}]]}]],null],null],["$L7",null]]]]
+8:T3542,<h2 id="模様替え" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;">模様替え</h2>
+<p>模様替えした。机を片付けてリビングを生成した。ソファと本棚、ベランダに続く窓で余白を三方から囲む間取り。寝室にはベッドと着替えに関するものがある。</p>
+<p>机がないのはどうなのだろうと思ったが、ここ1年くらいは家でパソコンするときはノートパソコンだけで完結させることが増えたし、そもそも読書が中心なので机をヘビーユースしない。数学の本を読むみたいな読み方をしにくくなることと、在宅ワークしたくなったときに面倒そうなのがネックかな。リビングの空間がいい感じで嬉しい。</p>
+<h2 id="goコンパイラのデータ構造" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;">Goコンパイラのデータ構造</h2>
+<p>Goは静的解析のためのパッケージを標準で提供していて静的解析ツールを作ろうと思うとコンパイラが扱うデータ構造を割と見ることになる。AST、その型、SSAが代表格だろう。型は単体でプログラムを表現するわけではなく、ASTに対してつく（かもしれない）メタデータだと思えるかもしれないが、これらのデータ構造はGoコードのいろんな表現の中の一つだと思えそう。アセンブリ言語もその中の一つなのだろうけど、アーキテクチャに依存したりランタイムのあれこれが入ってきたりして抽象度以外の違いも入ってきそう。</p>
+<p>静的にコードを解析すると一口で言っても解析の内容にはいろんな抽象度の違いがある。多分ぼくは型レベルの話までは適切な抽象度を選んで使えるのだけどSSAで表現するようなレベルだとまともに使えないと思う。使えるようになるにはどんな表現があって、どんな解釈をするのかとか他のレイヤとのどんな対応づけをするかを把握すると良いのだろう。</p>
+<ul class="contains-task-list">
+<li class="task-list-item"><svg id="qpdAeeRVIY6N32k-RreqDlF8YTB-gUcJQn9H9jslI2c" viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg><input type="checkbox" checked disabled> そういう話を <a href="https://tenntenn.connpass.com/event/333670/">https://tenntenn.connpass.com/event/333670/</a> ここでできたら面白そう。</li>
+</ul>
+<h2 id="ブログ開発" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;">ブログ開発</h2>
+<ul class="contains-task-list">
+<li class="task-list-item"><svg id="8aCkPvjRDpX7p20L6gR_R7_MaAuKBpU_sOe0cClxnN8" viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg><input type="checkbox" disabled> すべてのtodoアイテムにクリックでリンクコピーが可能なsvgをつけた。そのためにidを生成しているのだけど、コンテンツのハッシュ値を用いているのでテキストを加えたりするだけでアンカーが壊れる。直したい。</li>
+</ul>
+<h2 id="やること" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;">やること</h2>
+<ul class="contains-task-list">
+<li class="task-list-item"><svg id="6Zyfcz2dPcaIQkNxRzos1TOZWMg0iWqEjhOr7PtN1mw" viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg><input type="checkbox" checked disabled> 衣類収納・衣替え</li>
+<li class="task-list-item"><svg id="5uciaAqUmIxUQAhlVW_xMb_tvoIakMuMKtzc6Xpx8P4" viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg><input type="checkbox" checked disabled> ゴミ袋 (> 17L)</li>
+<li class="task-list-item"><svg id="Z2i3Q6nwUmuLkTP8akRhyQ8adbRXxMHlJ0McH5E4Mhk" viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg><input type="checkbox" checked disabled> 食材
+<ul>
+<li>野菜</li>
+<li>肉</li>
+<li>卵</li>
+</ul>
+</li>
+<li class="task-list-item"><svg id="oIYUE_BctEVYmadPunB0z3_JUd1xLU9OmPszpT_Pd80" viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg><input type="checkbox" checked disabled> <del>Real World HTTPをがッと読む</del> やっぱり「ドメイン駆動設計をはじめよう」にする</li>
+</ul>
+<h2 id="話せることを探し出せそうな分野" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;">話せることを探し出せそうな分野</h2>
+<ul>
+<li>型システム</li>
+<li>静的解析</li>
+<li>意味論</li>
+<li>ソフトウェア設計</li>
+<li>開発ツール</li>
+</ul>
+<h3 id="ソフトウェア設計についてインターフェースは失敗できるように作るなというあれがある" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;">ソフトウェア設計について、インターフェースは失敗できるように作るなというあれがある</h3>
+<p>philosopy of software designとかに書かれてる。コンストラクタとかメソッドの定義とか引数の型とかでいい感じにできる。でもたまに辛いこともある。変更するのがだるいとか、そもそも人が管理しているやつで変更のためのコミュニケーションが面倒とか。あとは既存ユーザが多すぎて変更が大変とか、そこまで設計でカバーするのは大袈裟とかも入るかな。型パズルすれば間違えられないけど、定義をメンテナンスするのが辛くなるとか読みづらいとか。</p>
+<p>そこで静的開発ツールを入れてしまう手がある。便利なツールがあるのはいいけど失敗すると辛いので、静的解析で（多少雑に）防ぐ方法。</p>
+<p>TypeScriptなんかはそれをめっちゃ頑張った例だし、Goの未使用変数を許さないやつは頑張れば型システムでなんとかなるけど、そこじゃないでしょうということで静的解析ツールの領分になっていそう。型システムちゃんと作るのめんどいし。</p>
+<p>上手な設計をする他にeffecttiveな使い方を促進する方法としての静的解析を推したい。</p>
+<p>静的解析ツールというと何を思いつくだろうか。</p>
+<h2 id="楽しみ" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;">楽しみ</h2>
+<p>学習による能力の獲得による喜びと課題解決に対する喜びでは、課題解決の方がでかいように感じる。それらは相入れない楽しみではなく課題を解決するために必要な学びをすることで、途中では学ぶ喜びを手に入れつつ、最終的には課題解決の喜びを得られる。さらに学ぶ途中では課題解決のために前進する喜びを追加で味わうことができる。</p>
+<p>なお、それが本当に自分が学びたかったことだなのだろうか、みたいな悩みを抱くことはあるかもしれない。</p>2:[["$","article",null,{"children":[["$","h1",null,{"children":"2024-10-14"}],["$","time",null,{"children":"2024-10-14T12:32:35+09:00"}],["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$8"}}]]}],["$","span",null,{"style":{"marginInline":"5px"},"children":["$","a",null,{"href":"/posts/2024-10-11","children":"< 2024-10-11"}]}],["$","span",null,{"style":{"marginInline":"5px"},"children":["$","a",null,{"href":"/posts/2024-10-15","children":"2024-10-15 >"}]}]]
+7:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"2024-10-14 | diary.nfurudono.com"}],["$","meta","3",{"name":"description","content":"模様替えした。机を片付けてリビングを生成した。ソファと本棚、ベランダに続く窓で余白を三方から囲む間取り。寝室にはベッドと着替えに関するものがある。"}],["$","link","4",{"rel":"author","href":"https://blog.nfurudono.com/profile/"}],["$","meta","5",{"name":"author","content":"Naoya Furudono"}]]
+1:null

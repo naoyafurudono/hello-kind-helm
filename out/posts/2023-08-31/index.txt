@@ -1,0 +1,40 @@
+3:I[4707,[],""]
+5:I[6423,[],""]
+6:I[2972,["972","static/chunks/972-f708ded502b3627d.js","185","static/chunks/app/layout-aa1129b13619db0b.js"],""]
+4:["id","2023-08-31","d"]
+0:["N2S61W7SgBtvfjyLIwY7-",[[["",{"children":["posts",{"children":[["id","2023-08-31","d"],{"children":["__PAGE__?{\"id\":\"2023-08-31\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["posts",{"children":[["id","2023-08-31","d"],{"children":["__PAGE__",{},[["$L1","$L2",null],null],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[[null,["$","html",null,{"lang":"ja","children":[["$","style",null,{"children":"\n[id] {\n  border: 2px solid transparent; /* 初期のボーダー */\n  transition: all 0.3s ease; /* トランジション効果 */\n  cursor: pointer; /* カーソルをポインタにする */\n}\n\n[id]:hover {\n  background-color: #f0f0f0; /* 背景色を変更 */\n  border-color: #007bff; /* ボーダーの色を変更 */\n  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* シャドウを追加 */\n}\n\n[id]:focus {\n  outline: none; /* デフォルトのアウトラインを消す */\n  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* フォーカス時の影を追加 */\n}\n\t\t"}],["$","body",null,{"children":[["$","header",null,{"children":["$","nav",null,{"children":["$","ul",null,{"children":[["$","li","/",{"children":["$","$L6",null,{"href":"/","children":"diary.nfurudono.com"}]}],["$","li","/todos/",{"children":["$","$L6",null,{"href":"/todos/","children":"todos"}]}],["$","li","https://twitter.com/furudono2",{"children":["$","$L6",null,{"href":"https://twitter.com/furudono2","children":"書いてる人のTwitter"}]}],["$","li","https://zenn.dev/nfurudono",{"children":["$","$L6",null,{"href":"https://zenn.dev/nfurudono","children":"最近の技術記事（Zenn、試しに使っています）"}]}],["$","li","https://blog.nfurudono.com",{"children":["$","$L6",null,{"href":"https://blog.nfurudono.com","children":"技術記事"}]}]]}]}]}],["$","main",null,{"children":["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[]}]}],["$","footer",null,{"children":["$","nav",null,{"children":["$","ul",null,{"children":[["$","li","/",{"children":["$","$L6",null,{"href":"/","children":"diary.nfurudono.com"}]}],["$","li","/todos/",{"children":["$","$L6",null,{"href":"/todos/","children":"todos"}]}],["$","li","https://twitter.com/furudono2",{"children":["$","$L6",null,{"href":"https://twitter.com/furudono2","children":"書いてる人のTwitter"}]}],["$","li","https://zenn.dev/nfurudono",{"children":["$","$L6",null,{"href":"https://zenn.dev/nfurudono","children":"最近の技術記事（Zenn、試しに使っています）"}]}],["$","li","https://blog.nfurudono.com",{"children":["$","$L6",null,{"href":"https://blog.nfurudono.com","children":"技術記事"}]}]]}]}]}]]}]]}]],null],null],["$L7",null]]]]
+8:Tab9,<h2 id="今月まとめ" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;">今月まとめ</h2>
+<p>今月はOJTが始まって、大変だなあという感想と自分成長できているなという喜びがあった。毎月力不足を感じて反省をし、できることが増えて次でそれを活かしつつ、次の力不足を感じる、というのをやっている。いい流れ。ポケモンみたい。</p>
+<p>残念ながら自分のキャパはそんなにないことを痛感している。悲観するほどキャパがないわけでも将来に期待できないわけでもないが、気合いがあればなんでもできるというわけではなくて、気合いの入れどころを工夫しないとできないことはあるよね、という気づきが今月のホットトピック。</p>
+<p>まだ短期的な実感しかないけど、人生を通して自分ができること、人に頼りたいこととかをみえるようになると一歩真人間ぽく幸せに近づけるのかなと思ってる。</p>
+<h2 id="アウトプットについて" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;">アウトプットについて</h2>
+<p>大学を卒業して会社に入ったことで、自分とは異なるバックグラウンドの人ばかりいる環境に身を置くことになった。それをうまいこと使って、良い影響を僕から広げるためにできることを考えている。</p>
+<ul>
+<li>契約と型
+<ul>
+<li>契約って概念があって、言葉を知っているかは知らんけど、内容自体はみんな日頃から思うところがあると思う。</li>
+<li>型は多かれ少なかれ思うところがあると思うけど、こういう使い道があるんやで、という話</li>
+<li>特に契約の延長線上にある型は結構便利で、単にプログラムがデータ型の違いでぶっ壊れるというよりか、最初の設計通りにプログラムをかけていそうなことを安心してコードを信頼するための便利な仕組みなんだよ、という話</li>
+<li>特に代数的データ型はいいぞ
+<ul>
+<li>帰納法と場合わけ</li>
+<li>それのコンパイラによる支援</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>2:[["$","article",null,{"children":[["$","h1",null,{"children":"2023-08-31"}],["$","time",null,{"children":"2023-08-31T21:32:42+09:00"}],["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$8"}}]]}],["$","span",null,{"style":{"marginInline":"5px"},"children":["$","a",null,{"href":"/posts/2023-08-30","children":"< 2023-08-30"}]}],["$","span",null,{"style":{"marginInline":"5px"},"children":["$","a",null,{"href":"/posts/2023-09-05","children":"2023-09-05 >"}]}]]
+7:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"2023-08-31 | diary.nfurudono.com"}],["$","meta","3",{"name":"description","content":"今月はOJTが始まって、大変だなあという感想と自分成長できているなという喜びがあった。毎月力不足を感じて反省をし、できることが増えて次でそれを活かしつつ、次の力不足を感じる、というのをやっている。いい流れ。ポケモンみたい。"}],["$","link","4",{"rel":"author","href":"https://blog.nfurudono.com/profile/"}],["$","meta","5",{"name":"author","content":"Naoya Furudono"}]]
+1:null

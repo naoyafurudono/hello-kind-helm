@@ -1,0 +1,148 @@
+<!DOCTYPE html><html lang="ja"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="preload" as="script" fetchPriority="low" href="/_next/static/chunks/webpack-100b9e646d9c912e.js"/><script src="/_next/static/chunks/fd9d1056-749e5812300142af.js" async=""></script><script src="/_next/static/chunks/117-0773d3d7d828a895.js" async=""></script><script src="/_next/static/chunks/main-app-47eeba86d2ddfbea.js" async=""></script><script src="/_next/static/chunks/972-f708ded502b3627d.js" async=""></script><script src="/_next/static/chunks/app/layout-aa1129b13619db0b.js" async=""></script><title>2023-07-21 | diary.nfurudono.com</title><meta name="description" content="https://github.com/naoyafurudono/comp"/><link rel="author" href="https://blog.nfurudono.com/profile/"/><meta name="author" content="Naoya Furudono"/><script src="/_next/static/chunks/polyfills-42372ed130431b0a.js" noModule=""></script></head><style>
+[id] {
+  border: 2px solid transparent; /* 初期のボーダー */
+  transition: all 0.3s ease; /* トランジション効果 */
+  cursor: pointer; /* カーソルをポインタにする */
+}
+
+[id]:hover {
+  background-color: #f0f0f0; /* 背景色を変更 */
+  border-color: #007bff; /* ボーダーの色を変更 */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* シャドウを追加 */
+}
+
+[id]:focus {
+  outline: none; /* デフォルトのアウトラインを消す */
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* フォーカス時の影を追加 */
+}
+		</style><body><header><nav><ul><li><a href="/">diary.nfurudono.com</a></li><li><a href="/todos/">todos</a></li><li><a href="https://twitter.com/furudono2">書いてる人のTwitter</a></li><li><a href="https://zenn.dev/nfurudono">最近の技術記事（Zenn、試しに使っています）</a></li><li><a href="https://blog.nfurudono.com">技術記事</a></li></ul></nav></header><main><article><h1>2023-07-21</h1><time>2023-07-21T23:18:37+09:00</time><div><h2 id="自作cコンパイラの進捗" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;">自作Cコンパイラの進捗</h2>
+<p><a href="https://github.com/naoyafurudono/comp">https://github.com/naoyafurudono/comp</a></p>
+<p>早いもので作り始めてから2週間たったみたい。もっとサクサク進むと思っていたのだけど、しばらく楽しめそう。</p>
+<p>自作CコンパイラでCのプログラムの一部をコンパイルできるようになった。これまでは変数宣言をできなかったので型宣言のあるmain関数を読めなかったが、intだけ許容するようになったので、初めてCのプログラムをコンパイラが受け付けたことになる。</p>
+<p>こんなコードをコンパイルすると、</p>
+<pre><code class="language-c">int main()
+{ 
+  int a; int b; int i;
+  a=0; b=1; i=0;
+  while(i &#x3C; 10)
+  { 
+    int t; 
+    t=a+b; a=b; b=t; 
+    i=i+1; 
+  }
+  return a;
+}
+</code></pre>
+<p>こんなアセンブリを吐く。SSAみたいな中間表現を挟んでレジスタ割り付けを真面目にやるのはいつがいいんだろうか。</p>
+<pre><code class="language-arm64">.globl _main
+.text
+.balign 4
+_main:
+    stp x29, x30, [SP, #-16]!
+    mov x29, SP
+    sub SP, SP, #32
+    mov x0, #-16
+    str x0, [SP, #-16]!
+    mov x0, #0
+    str x0, [SP, #-16]!
+    ldr x0, [SP], #16
+    ldr x1, [SP], #16
+    str x0, [x29, x1]
+    str x0, [SP, #-16]!
+    mov x0, #-24
+    str x0, [SP, #-16]!
+    mov x0, #1
+    str x0, [SP, #-16]!
+    ldr x0, [SP], #16
+    ldr x1, [SP], #16
+    str x0, [x29, x1]
+    str x0, [SP, #-16]!
+    mov x0, #-32
+    str x0, [SP, #-16]!
+    mov x0, #0
+    str x0, [SP, #-16]!
+    ldr x0, [SP], #16
+    ldr x1, [SP], #16
+    str x0, [x29, x1]
+    str x0, [SP, #-16]!
+.L0:
+    mov x1, -32
+    ldr x0, [x29, x1]
+    str x0, [SP, #-16]!
+    mov x0, #10
+    str x0, [SP, #-16]!
+    ldr x1, [SP], #16
+    ldr x0, [SP], #16
+    cmp x0, x1
+    cset x0, lt
+    str x0, [SP, #-16]!
+    ldr x0, [SP], #16
+    cbz x0, .L1
+    mov x0, #-40
+    str x0, [SP, #-16]!
+    mov x1, -16
+    ldr x0, [x29, x1]
+    str x0, [SP, #-16]!
+    mov x1, -24
+    ldr x0, [x29, x1]
+    str x0, [SP, #-16]!
+    ldr x1, [SP], #16
+    ldr x0, [SP], #16
+    add x0, x0, x1
+    str x0, [SP, #-16]!
+    ldr x0, [SP], #16
+    ldr x1, [SP], #16
+    str x0, [x29, x1]
+    str x0, [SP, #-16]!
+    mov x0, #-16
+    str x0, [SP, #-16]!
+    mov x1, -24
+    ldr x0, [x29, x1]
+    str x0, [SP, #-16]!
+    ldr x0, [SP], #16
+    ldr x1, [SP], #16
+    str x0, [x29, x1]
+    str x0, [SP, #-16]!
+    mov x0, #-24
+    str x0, [SP, #-16]!
+    mov x1, -40
+    ldr x0, [x29, x1]
+    str x0, [SP, #-16]!
+    ldr x0, [SP], #16
+    ldr x1, [SP], #16
+    str x0, [x29, x1]
+    str x0, [SP, #-16]!
+    mov x0, #-32
+    str x0, [SP, #-16]!
+    mov x1, -32
+    ldr x0, [x29, x1]
+    str x0, [SP, #-16]!
+    mov x0, #1
+    str x0, [SP, #-16]!
+    ldr x1, [SP], #16
+    ldr x0, [SP], #16
+    add x0, x0, x1
+    str x0, [SP, #-16]!
+    ldr x0, [SP], #16
+    ldr x1, [SP], #16
+    str x0, [x29, x1]
+    str x0, [SP, #-16]!
+    b .L0
+.L1:
+    mov x1, -16
+    ldr x0, [x29, x1]
+    str x0, [SP, #-16]!
+    ldr x0, [SP], #16
+    mov SP, x29
+    ldp x29, x30, [SP], #16
+    ret
+    mov SP, x29
+    ldp x29, x30, [SP], #16
+    ret
+</code></pre></div></article><span style="margin-inline:5px"><a href="/posts/2023-07-19">&lt; 2023-07-19</a></span><span style="margin-inline:5px"><a href="/posts/2023-07-22">2023-07-22 &gt;</a></span></main><footer><nav><ul><li><a href="/">diary.nfurudono.com</a></li><li><a href="/todos/">todos</a></li><li><a href="https://twitter.com/furudono2">書いてる人のTwitter</a></li><li><a href="https://zenn.dev/nfurudono">最近の技術記事（Zenn、試しに使っています）</a></li><li><a href="https://blog.nfurudono.com">技術記事</a></li></ul></nav></footer><script src="/_next/static/chunks/webpack-100b9e646d9c912e.js" async=""></script><script>(self.__next_f=self.__next_f||[]).push([0]);self.__next_f.push([2,null])</script><script>self.__next_f.push([1,"1:I[2846,[],\"\"]\n4:I[4707,[],\"\"]\n6:I[6423,[],\"\"]\n7:I[2972,[\"972\",\"static/chunks/972-f708ded502b3627d.js\",\"185\",\"static/chunks/app/layout-aa1129b13619db0b.js\"],\"\"]\n9:I[1060,[],\"\"]\n5:[\"id\",\"2023-07-21\",\"d\"]\na:[]\n"])</script><script>self.__next_f.push([1,"0:[\"$\",\"$L1\",null,{\"buildId\":\"N2S61W7SgBtvfjyLIwY7-\",\"assetPrefix\":\"\",\"urlParts\":[\"\",\"posts\",\"2023-07-21\",\"\"],\"initialTree\":[\"\",{\"children\":[\"posts\",{\"children\":[[\"id\",\"2023-07-21\",\"d\"],{\"children\":[\"__PAGE__?{\\\"id\\\":\\\"2023-07-21\\\"}\",{}]}]}]},\"$undefined\",\"$undefined\",true],\"initialSeedData\":[\"\",{\"children\":[\"posts\",{\"children\":[[\"id\",\"2023-07-21\",\"d\"],{\"children\":[\"__PAGE__\",{},[[\"$L2\",\"$L3\",null],null],null]},[null,[\"$\",\"$L4\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\",\"posts\",\"children\",\"$5\",\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"notFoundStyles\":\"$undefined\"}]],null]},[null,[\"$\",\"$L4\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\",\"posts\",\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"notFoundStyles\":\"$undefined\"}]],null]},[[null,[\"$\",\"html\",null,{\"lang\":\"ja\",\"children\":[[\"$\",\"style\",null,{\"children\":\"\\n[id] {\\n  border: 2px solid transparent; /* 初期のボーダー */\\n  transition: all 0.3s ease; /* トランジション効果 */\\n  cursor: pointer; /* カーソルをポインタにする */\\n}\\n\\n[id]:hover {\\n  background-color: #f0f0f0; /* 背景色を変更 */\\n  border-color: #007bff; /* ボーダーの色を変更 */\\n  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* シャドウを追加 */\\n}\\n\\n[id]:focus {\\n  outline: none; /* デフォルトのアウトラインを消す */\\n  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* フォーカス時の影を追加 */\\n}\\n\\t\\t\"}],[\"$\",\"body\",null,{\"children\":[[\"$\",\"header\",null,{\"children\":[\"$\",\"nav\",null,{\"children\":[\"$\",\"ul\",null,{\"children\":[[\"$\",\"li\",\"/\",{\"children\":[\"$\",\"$L7\",null,{\"href\":\"/\",\"children\":\"diary.nfurudono.com\"}]}],[\"$\",\"li\",\"/todos/\",{\"children\":[\"$\",\"$L7\",null,{\"href\":\"/todos/\",\"children\":\"todos\"}]}],[\"$\",\"li\",\"https://twitter.com/furudono2\",{\"children\":[\"$\",\"$L7\",null,{\"href\":\"https://twitter.com/furudono2\",\"children\":\"書いてる人のTwitter\"}]}],[\"$\",\"li\",\"https://zenn.dev/nfurudono\",{\"children\":[\"$\",\"$L7\",null,{\"href\":\"https://zenn.dev/nfurudono\",\"children\":\"最近の技術記事（Zenn、試しに使っています）\"}]}],[\"$\",\"li\",\"https://blog.nfurudono.com\",{\"children\":[\"$\",\"$L7\",null,{\"href\":\"https://blog.nfurudono.com\",\"children\":\"技術記事\"}]}]]}]}]}],[\"$\",\"main\",null,{\"children\":[\"$\",\"$L4\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":\"404\"}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],\"notFoundStyles\":[]}]}],[\"$\",\"footer\",null,{\"children\":[\"$\",\"nav\",null,{\"children\":[\"$\",\"ul\",null,{\"children\":[[\"$\",\"li\",\"/\",{\"children\":[\"$\",\"$L7\",null,{\"href\":\"/\",\"children\":\"diary.nfurudono.com\"}]}],[\"$\",\"li\",\"/todos/\",{\"children\":[\"$\",\"$L7\",null,{\"href\":\"/todos/\",\"children\":\"todos\"}]}],[\"$\",\"li\",\"https://twitter.com/furudono2\",{\"children\":[\"$\",\"$L7\",null,{\"href\":\"https://twitter.com/furudono2\",\"children\":\"書いてる人のTwitter\"}]}],[\"$\",\"li\",\"https://zenn.dev/nfurudono\",{\"children\":[\"$\",\"$L7\",null,{\"href\":\"https://zenn.dev/nfurudono\",\"children\":\"最近の技術記事（Zenn、試しに使っています）\"}]}],[\"$\",\"li\",\"https://blog.nfurudono.com\",{\"children\":[\"$\",\"$L7\",null,{\"href\":\"https://blog.nfurudono.com\",\"children\":\"技術記事\"}]}]]}]}]}]]}]]}]],null],null],\"couldBeIntercepted\":false,\"initialHead\":[null,\"$L8\"],\"globalErrorComponent\":\"$9\",\"missingSlots\":\"$Wa\"}]\n"])</script><script>self.__next_f.push([1,"b:Tdd1,"])</script><script>self.__next_f.push([1,"\u003ch2 id=\"自作cコンパイラの進捗\" onclick=\"\n          event.preventDefault();\n          const url = window.location.origin + window.location.pathname + \u0026#x27;#\u0026#x27; + this.id;\n          navigator.clipboard.writeText(url).then(_ =\u003e {\n            window.location.href = url;\n          })\n        \" style=\"cursor: pointer;\"\u003e自作Cコンパイラの進捗\u003c/h2\u003e\n\u003cp\u003e\u003ca href=\"https://github.com/naoyafurudono/comp\"\u003ehttps://github.com/naoyafurudono/comp\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e早いもので作り始めてから2週間たったみたい。もっとサクサク進むと思っていたのだけど、しばらく楽しめそう。\u003c/p\u003e\n\u003cp\u003e自作CコンパイラでCのプログラムの一部をコンパイルできるようになった。これまでは変数宣言をできなかったので型宣言のあるmain関数を読めなかったが、intだけ許容するようになったので、初めてCのプログラムをコンパイラが受け付けたことになる。\u003c/p\u003e\n\u003cp\u003eこんなコードをコンパイルすると、\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-c\"\u003eint main()\n{ \n  int a; int b; int i;\n  a=0; b=1; i=0;\n  while(i \u0026#x3C; 10)\n  { \n    int t; \n    t=a+b; a=b; b=t; \n    i=i+1; \n  }\n  return a;\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eこんなアセンブリを吐く。SSAみたいな中間表現を挟んでレジスタ割り付けを真面目にやるのはいつがいいんだろうか。\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-arm64\"\u003e.globl _main\n.text\n.balign 4\n_main:\n    stp x29, x30, [SP, #-16]!\n    mov x29, SP\n    sub SP, SP, #32\n    mov x0, #-16\n    str x0, [SP, #-16]!\n    mov x0, #0\n    str x0, [SP, #-16]!\n    ldr x0, [SP], #16\n    ldr x1, [SP], #16\n    str x0, [x29, x1]\n    str x0, [SP, #-16]!\n    mov x0, #-24\n    str x0, [SP, #-16]!\n    mov x0, #1\n    str x0, [SP, #-16]!\n    ldr x0, [SP], #16\n    ldr x1, [SP], #16\n    str x0, [x29, x1]\n    str x0, [SP, #-16]!\n    mov x0, #-32\n    str x0, [SP, #-16]!\n    mov x0, #0\n    str x0, [SP, #-16]!\n    ldr x0, [SP], #16\n    ldr x1, [SP], #16\n    str x0, [x29, x1]\n    str x0, [SP, #-16]!\n.L0:\n    mov x1, -32\n    ldr x0, [x29, x1]\n    str x0, [SP, #-16]!\n    mov x0, #10\n    str x0, [SP, #-16]!\n    ldr x1, [SP], #16\n    ldr x0, [SP], #16\n    cmp x0, x1\n    cset x0, lt\n    str x0, [SP, #-16]!\n    ldr x0, [SP], #16\n    cbz x0, .L1\n    mov x0, #-40\n    str x0, [SP, #-16]!\n    mov x1, -16\n    ldr x0, [x29, x1]\n    str x0, [SP, #-16]!\n    mov x1, -24\n    ldr x0, [x29, x1]\n    str x0, [SP, #-16]!\n    ldr x1, [SP], #16\n    ldr x0, [SP], #16\n    add x0, x0, x1\n    str x0, [SP, #-16]!\n    ldr x0, [SP], #16\n    ldr x1, [SP], #16\n    str x0, [x29, x1]\n    str x0, [SP, #-16]!\n    mov x0, #-16\n    str x0, [SP, #-16]!\n    mov x1, -24\n    ldr x0, [x29, x1]\n    str x0, [SP, #-16]!\n    ldr x0, [SP], #16\n    ldr x1, [SP], #16\n    str x0, [x29, x1]\n    str x0, [SP, #-16]!\n    mov x0, #-24\n    str x0, [SP, #-16]!\n    mov x1, -40\n    ldr x0, [x29, x1]\n    str x0, [SP, #-16]!\n    ldr x0, [SP], #16\n    ldr x1, [SP], #16\n    str x0, [x29, x1]\n    str x0, [SP, #-16]!\n    mov x0, #-32\n    str x0, [SP, #-16]!\n    mov x1, -32\n    ldr x0, [x29, x1]\n    str x0, [SP, #-16]!\n    mov x0, #1\n    str x0, [SP, #-16]!\n    ldr x1, [SP], #16\n    ldr x0, [SP], #16\n    add x0, x0, x1\n    str x0, [SP, #-16]!\n    ldr x0, [SP], #16\n    ldr x1, [SP], #16\n    str x0, [x29, x1]\n    str x0, [SP, #-16]!\n    b .L0\n.L1:\n    mov x1, -16\n    ldr x0, [x29, x1]\n    str x0, [SP, #-16]!\n    ldr x0, [SP], #16\n    mov SP, x29\n    ldp x29, x30, [SP], #16\n    ret\n    mov SP, x29\n    ldp x29, x30, [SP], #16\n    ret\n\u003c/code\u003e\u003c/pre\u003e"])</script><script>self.__next_f.push([1,"3:[[\"$\",\"article\",null,{\"children\":[[\"$\",\"h1\",null,{\"children\":\"2023-07-21\"}],[\"$\",\"time\",null,{\"children\":\"2023-07-21T23:18:37+09:00\"}],[\"$\",\"div\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"$b\"}}]]}],[\"$\",\"span\",null,{\"style\":{\"marginInline\":\"5px\"},\"children\":[\"$\",\"a\",null,{\"href\":\"/posts/2023-07-19\",\"children\":\"\u003c 2023-07-19\"}]}],[\"$\",\"span\",null,{\"style\":{\"marginInline\":\"5px\"},\"children\":[\"$\",\"a\",null,{\"href\":\"/posts/2023-07-22\",\"children\":\"2023-07-22 \u003e\"}]}]]\n8:[[\"$\",\"meta\",\"0\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}],[\"$\",\"meta\",\"1\",{\"charSet\":\"utf-8\"}],[\"$\",\"title\",\"2\",{\"children\":\"2023-07-21 | diary.nfurudono.com\"}],[\"$\",\"meta\",\"3\",{\"name\":\"description\",\"content\":\"https://github.com/naoyafurudono/comp\"}],[\"$\",\"link\",\"4\",{\"rel\":\"author\",\"href\":\"https://blog.nfurudono.com/profile/\"}],[\"$\",\"meta\",\"5\",{\"name\":\"author\",\"content\":\"Naoya Furudono\"}]]\n2:null\n"])</script></body></html>

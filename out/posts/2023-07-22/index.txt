@@ -1,0 +1,42 @@
+3:I[4707,[],""]
+5:I[6423,[],""]
+6:I[2972,["972","static/chunks/972-f708ded502b3627d.js","185","static/chunks/app/layout-aa1129b13619db0b.js"],""]
+4:["id","2023-07-22","d"]
+0:["N2S61W7SgBtvfjyLIwY7-",[[["",{"children":["posts",{"children":[["id","2023-07-22","d"],{"children":["__PAGE__?{\"id\":\"2023-07-22\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["posts",{"children":[["id","2023-07-22","d"],{"children":["__PAGE__",{},[["$L1","$L2",null],null],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[[null,["$","html",null,{"lang":"ja","children":[["$","style",null,{"children":"\n[id] {\n  border: 2px solid transparent; /* 初期のボーダー */\n  transition: all 0.3s ease; /* トランジション効果 */\n  cursor: pointer; /* カーソルをポインタにする */\n}\n\n[id]:hover {\n  background-color: #f0f0f0; /* 背景色を変更 */\n  border-color: #007bff; /* ボーダーの色を変更 */\n  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* シャドウを追加 */\n}\n\n[id]:focus {\n  outline: none; /* デフォルトのアウトラインを消す */\n  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* フォーカス時の影を追加 */\n}\n\t\t"}],["$","body",null,{"children":[["$","header",null,{"children":["$","nav",null,{"children":["$","ul",null,{"children":[["$","li","/",{"children":["$","$L6",null,{"href":"/","children":"diary.nfurudono.com"}]}],["$","li","/todos/",{"children":["$","$L6",null,{"href":"/todos/","children":"todos"}]}],["$","li","https://twitter.com/furudono2",{"children":["$","$L6",null,{"href":"https://twitter.com/furudono2","children":"書いてる人のTwitter"}]}],["$","li","https://zenn.dev/nfurudono",{"children":["$","$L6",null,{"href":"https://zenn.dev/nfurudono","children":"最近の技術記事（Zenn、試しに使っています）"}]}],["$","li","https://blog.nfurudono.com",{"children":["$","$L6",null,{"href":"https://blog.nfurudono.com","children":"技術記事"}]}]]}]}]}],["$","main",null,{"children":["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[]}]}],["$","footer",null,{"children":["$","nav",null,{"children":["$","ul",null,{"children":[["$","li","/",{"children":["$","$L6",null,{"href":"/","children":"diary.nfurudono.com"}]}],["$","li","/todos/",{"children":["$","$L6",null,{"href":"/todos/","children":"todos"}]}],["$","li","https://twitter.com/furudono2",{"children":["$","$L6",null,{"href":"https://twitter.com/furudono2","children":"書いてる人のTwitter"}]}],["$","li","https://zenn.dev/nfurudono",{"children":["$","$L6",null,{"href":"https://zenn.dev/nfurudono","children":"最近の技術記事（Zenn、試しに使っています）"}]}],["$","li","https://blog.nfurudono.com",{"children":["$","$L6",null,{"href":"https://blog.nfurudono.com","children":"技術記事"}]}]]}]}]}]]}]]}]],null],null],["$L7",null]]]]
+8:T10aa,<h2 id="ふにゃっとしてる" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;">ふにゃっとしてる</h2>
+<p>コンパイラの実装で、次はポインタ算術をやる。演算子がオーバーローディングされているので型検査が必要。今は環境とかのデータ構造を設計する気力がなくて、パソコンを前にふにゃっとしている。お昼ご飯食べたら考える。</p>
+<p>興味本位でコンパイルしたプログラムの実行速度を測ってみた。時間計算量が試数時間なfibの実装（あのみんな大好きなナイーブなやつ）で、fib(40)を計算してみた。自作コンパイラだとuser時間が1.3secくらいなのに対して、gccのO3でuser時間が0.3secくらいだった。O3を指定しないと（多分O2）0.5secくらい。Inliningとかは効かないだろうし、ループ周りでの最適化もできないはず。スタックマシンではなくレジスタマシンとして動かすことで（無駄なpush/popを排除することで）O2くらいの速さになってる感じかな。O3では何が早くなってるんだろう。気が向いたら調べるか、実装するかしたい。</p>
+<h2 id="がんばった" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;">がんばった</h2>
+<p>お昼を食べて買い物に行ったあと、型検査器を実装した。がんばった。strcmpがboolを返すと思い込むやつをやって時間を溶かした。ランニングをしてオーバーロードに取り組む。今はintもポインタも64bitにしているけど、abiをみたらintは32bitっぽいので合わせる。オーバーロードは楽しそうだけどintを32bitにするのが面倒。ASTに型を行き渡らせたので難しくはないはず。</p>
+<p>買い物ではズボンを買いに行った。涼しい長ズボンが欲しかったので。初めて買う感じのやつを変えて満足している。サンダルも欲しかったけど、僕の期待が矛盾していることに気がついたので断念。来年は期待を変えられることを願って今年はスニーカを履き続ける。</p>
+<h2 id="動的束縛が欲しい" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;">動的束縛が欲しい</h2>
+<p>Cとかその辺の関数型言語を使っていると欲しくなる言語機能第1位は動的束縛だという説を提唱したい。代数的エフェクトほどのことを普段使いに人類は求めているとは僕には思えなくて（普段使いと言ったのは、凝った仕組みを作る場合はのぞきたい気持ちの表れ）<a href="https://docs.racket-lang.org/guide/parameterize.html">動的束縛</a>が欲しいんじゃないだろうか。オブジェクト指向でインスタンス変数を使うのもこの用途が多いんじゃないかと勝手に思っているんだけどどうだろう。</p>
+<p>とにかく、動的束縛が欲しい。動的束縛はいいぞの会を結成するまである。</p>
+<h2 id="キーボードの不調" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;">キーボードの不調</h2>
+<p>Uを叩くとメチって音がする。髪の毛でも入り込んでしまったかもしれない。割とストレス。</p>2:[["$","article",null,{"children":[["$","h1",null,{"children":"2023-07-22"}],["$","time",null,{"children":"2023-07-22T11:56:59+09:00"}],["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$8"}}]]}],["$","span",null,{"style":{"marginInline":"5px"},"children":["$","a",null,{"href":"/posts/2023-07-21","children":"< 2023-07-21"}]}],["$","span",null,{"style":{"marginInline":"5px"},"children":["$","a",null,{"href":"/posts/2023-07-29","children":"2023-07-29 >"}]}]]
+7:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"2023-07-22 | diary.nfurudono.com"}],["$","meta","3",{"name":"description","content":"コンパイラの実装で、次はポインタ算術をやる。演算子がオーバーローディングされているので型検査が必要。今は環境とかのデータ構造を設計する気力がなくて、パソコンを前にふにゃっとしている。お昼ご飯食べたら考える。"}],["$","link","4",{"rel":"author","href":"https://blog.nfurudono.com/profile/"}],["$","meta","5",{"name":"author","content":"Naoya Furudono"}]]
+1:null

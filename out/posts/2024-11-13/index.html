@@ -1,0 +1,79 @@
+<!DOCTYPE html><html lang="ja"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="preload" as="script" fetchPriority="low" href="/_next/static/chunks/webpack-100b9e646d9c912e.js"/><script src="/_next/static/chunks/fd9d1056-749e5812300142af.js" async=""></script><script src="/_next/static/chunks/117-0773d3d7d828a895.js" async=""></script><script src="/_next/static/chunks/main-app-47eeba86d2ddfbea.js" async=""></script><script src="/_next/static/chunks/972-f708ded502b3627d.js" async=""></script><script src="/_next/static/chunks/app/layout-aa1129b13619db0b.js" async=""></script><title>2024-11-13 | diary.nfurudono.com</title><meta name="description" content="fzfで表示される選択肢と選択した結果得られる値を分けられるようにしたいので作った。yamlでkey-valueペアのリストを保持しておいて、そのキーの選択をfzfで行い、得られる値はvalueである、みたいな感じ。"/><link rel="author" href="https://blog.nfurudono.com/profile/"/><meta name="author" content="Naoya Furudono"/><script src="/_next/static/chunks/polyfills-42372ed130431b0a.js" noModule=""></script></head><style>
+[id] {
+  border: 2px solid transparent; /* 初期のボーダー */
+  transition: all 0.3s ease; /* トランジション効果 */
+  cursor: pointer; /* カーソルをポインタにする */
+}
+
+[id]:hover {
+  background-color: #f0f0f0; /* 背景色を変更 */
+  border-color: #007bff; /* ボーダーの色を変更 */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* シャドウを追加 */
+}
+
+[id]:focus {
+  outline: none; /* デフォルトのアウトラインを消す */
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* フォーカス時の影を追加 */
+}
+		</style><body><header><nav><ul><li><a href="/">diary.nfurudono.com</a></li><li><a href="/todos/">todos</a></li><li><a href="https://twitter.com/furudono2">書いてる人のTwitter</a></li><li><a href="https://zenn.dev/nfurudono">最近の技術記事（Zenn、試しに使っています）</a></li><li><a href="https://blog.nfurudono.com">技術記事</a></li></ul></nav></header><main><article><h1>2024-11-13</h1><time>2024-11-13T19:02:20+09:00</time><div><p>fzfで表示される選択肢と選択した結果得られる値を分けられるようにしたいので作った。yamlでkey-valueペアのリストを保持しておいて、そのキーの選択をfzfで行い、得られる値はvalueである、みたいな感じ。</p>
+<pre><code class="language-bash">#!/bin/bash
+
+# ヘルプメッセージ
+function print_help {
+    echo "Usage: $0 &#x3C;yaml_file>"
+    echo
+    echo "This script allows you to select a key from a YAML file using fzf, and outputs the corresponding value."
+    echo
+    echo "Options:"
+    echo "  -h    Show this help message and exit"
+    echo
+    echo "Sample YAML format:"
+    echo "  key1: value1"
+    echo "  key2: value2"
+    echo "  key3: value3"
+}
+
+# -hオプションのチェック
+if [ "$1" == "-h" ]; then
+    print_help
+    exit 0
+fi
+
+# 引数チェック
+if [ -z "$1" ]; then
+    echo "Error: No YAML file specified." >&#x26;2
+    print_help
+    exit 1
+fi
+
+# 引数からYAMLファイルのパスを取得
+YAML_FILE="$1"
+
+# YAMLファイルの存在チェック
+if [ ! -f "$YAML_FILE" ]; then
+    echo "Error: File '$YAML_FILE' not found." >&#x26;2
+    exit 1
+fi
+
+# キーをfzfで選択
+selected_key=$(yq e 'keys | .[]' "$YAML_FILE" | fzf)
+
+# キーが選択されていない場合
+if [ -z "$selected_key" ]; then
+    echo "No key selected." >&#x26;2
+    exit 1
+fi
+
+# 選択されたキーに対応する値を取得
+selected_value=$(yq e ".${selected_key}" "$YAML_FILE")
+
+# 値を標準出力に表示
+echo "$selected_value"
+exit 0
+</code></pre>
+<p>上のコマンドを <code>fzf-keyvalue-select</code> という名前でパスを通しておく。その上で以下のような関数を登録しておくと便利。</p>
+<pre><code class="language-fish">function notion
+    set url (fzf-keyvalue-select ~/.local/fish/notion.yaml)
+    and open $url
+end
+</code></pre></div></article><span style="margin-inline:5px"><a href="/posts/2024-11-09">&lt; 2024-11-09</a></span><span style="margin-inline:5px"><a href="/posts/2024-11-20">2024-11-20 &gt;</a></span></main><footer><nav><ul><li><a href="/">diary.nfurudono.com</a></li><li><a href="/todos/">todos</a></li><li><a href="https://twitter.com/furudono2">書いてる人のTwitter</a></li><li><a href="https://zenn.dev/nfurudono">最近の技術記事（Zenn、試しに使っています）</a></li><li><a href="https://blog.nfurudono.com">技術記事</a></li></ul></nav></footer><script src="/_next/static/chunks/webpack-100b9e646d9c912e.js" async=""></script><script>(self.__next_f=self.__next_f||[]).push([0]);self.__next_f.push([2,null])</script><script>self.__next_f.push([1,"1:I[2846,[],\"\"]\n4:I[4707,[],\"\"]\n6:I[6423,[],\"\"]\n7:I[2972,[\"972\",\"static/chunks/972-f708ded502b3627d.js\",\"185\",\"static/chunks/app/layout-aa1129b13619db0b.js\"],\"\"]\n9:I[1060,[],\"\"]\n5:[\"id\",\"2024-11-13\",\"d\"]\na:[]\n"])</script><script>self.__next_f.push([1,"0:[\"$\",\"$L1\",null,{\"buildId\":\"N2S61W7SgBtvfjyLIwY7-\",\"assetPrefix\":\"\",\"urlParts\":[\"\",\"posts\",\"2024-11-13\",\"\"],\"initialTree\":[\"\",{\"children\":[\"posts\",{\"children\":[[\"id\",\"2024-11-13\",\"d\"],{\"children\":[\"__PAGE__?{\\\"id\\\":\\\"2024-11-13\\\"}\",{}]}]}]},\"$undefined\",\"$undefined\",true],\"initialSeedData\":[\"\",{\"children\":[\"posts\",{\"children\":[[\"id\",\"2024-11-13\",\"d\"],{\"children\":[\"__PAGE__\",{},[[\"$L2\",\"$L3\",null],null],null]},[null,[\"$\",\"$L4\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\",\"posts\",\"children\",\"$5\",\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"notFoundStyles\":\"$undefined\"}]],null]},[null,[\"$\",\"$L4\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\",\"posts\",\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"notFoundStyles\":\"$undefined\"}]],null]},[[null,[\"$\",\"html\",null,{\"lang\":\"ja\",\"children\":[[\"$\",\"style\",null,{\"children\":\"\\n[id] {\\n  border: 2px solid transparent; /* 初期のボーダー */\\n  transition: all 0.3s ease; /* トランジション効果 */\\n  cursor: pointer; /* カーソルをポインタにする */\\n}\\n\\n[id]:hover {\\n  background-color: #f0f0f0; /* 背景色を変更 */\\n  border-color: #007bff; /* ボーダーの色を変更 */\\n  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* シャドウを追加 */\\n}\\n\\n[id]:focus {\\n  outline: none; /* デフォルトのアウトラインを消す */\\n  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* フォーカス時の影を追加 */\\n}\\n\\t\\t\"}],[\"$\",\"body\",null,{\"children\":[[\"$\",\"header\",null,{\"children\":[\"$\",\"nav\",null,{\"children\":[\"$\",\"ul\",null,{\"children\":[[\"$\",\"li\",\"/\",{\"children\":[\"$\",\"$L7\",null,{\"href\":\"/\",\"children\":\"diary.nfurudono.com\"}]}],[\"$\",\"li\",\"/todos/\",{\"children\":[\"$\",\"$L7\",null,{\"href\":\"/todos/\",\"children\":\"todos\"}]}],[\"$\",\"li\",\"https://twitter.com/furudono2\",{\"children\":[\"$\",\"$L7\",null,{\"href\":\"https://twitter.com/furudono2\",\"children\":\"書いてる人のTwitter\"}]}],[\"$\",\"li\",\"https://zenn.dev/nfurudono\",{\"children\":[\"$\",\"$L7\",null,{\"href\":\"https://zenn.dev/nfurudono\",\"children\":\"最近の技術記事（Zenn、試しに使っています）\"}]}],[\"$\",\"li\",\"https://blog.nfurudono.com\",{\"children\":[\"$\",\"$L7\",null,{\"href\":\"https://blog.nfurudono.com\",\"children\":\"技術記事\"}]}]]}]}]}],[\"$\",\"main\",null,{\"children\":[\"$\",\"$L4\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":\"404\"}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],\"notFoundStyles\":[]}]}],[\"$\",\"footer\",null,{\"children\":[\"$\",\"nav\",null,{\"children\":[\"$\",\"ul\",null,{\"children\":[[\"$\",\"li\",\"/\",{\"children\":[\"$\",\"$L7\",null,{\"href\":\"/\",\"children\":\"diary.nfurudono.com\"}]}],[\"$\",\"li\",\"/todos/\",{\"children\":[\"$\",\"$L7\",null,{\"href\":\"/todos/\",\"children\":\"todos\"}]}],[\"$\",\"li\",\"https://twitter.com/furudono2\",{\"children\":[\"$\",\"$L7\",null,{\"href\":\"https://twitter.com/furudono2\",\"children\":\"書いてる人のTwitter\"}]}],[\"$\",\"li\",\"https://zenn.dev/nfurudono\",{\"children\":[\"$\",\"$L7\",null,{\"href\":\"https://zenn.dev/nfurudono\",\"children\":\"最近の技術記事（Zenn、試しに使っています）\"}]}],[\"$\",\"li\",\"https://blog.nfurudono.com\",{\"children\":[\"$\",\"$L7\",null,{\"href\":\"https://blog.nfurudono.com\",\"children\":\"技術記事\"}]}]]}]}]}]]}]]}]],null],null],\"couldBeIntercepted\":false,\"initialHead\":[null,\"$L8\"],\"globalErrorComponent\":\"$9\",\"missingSlots\":\"$Wa\"}]\n"])</script><script>self.__next_f.push([1,"b:T74d,\u003cp\u003efzfで表示される選択肢と選択した結果得られる値を分けられるようにしたいので作った。yamlでkey-valueペアのリストを保持しておいて、そのキーの選択をfzfで行い、得られる値はvalueである、みたいな感じ。\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-bash\"\u003e#!/bin/bash\n\n# ヘルプメッセージ\nfunction print_help {\n    echo \"Usage: $0 \u0026#x3C;yaml_file\u003e\"\n    echo\n    echo \"This script allows you to select a key from a YAML file using fzf, and outputs the corresponding value.\"\n    echo\n    echo \"Options:\"\n    echo \"  -h    Show this help message and exit\"\n    echo\n    echo \"Sample YAML format:\"\n    echo \"  key1: value1\"\n    echo \"  key2: value2\"\n    echo \"  key3: value3\"\n}\n\n# -hオプションのチェック\nif [ \"$1\" == \"-h\" ]; then\n    print_help\n    exit 0\nfi\n\n# 引数チェック\nif [ -z \"$1\" ]; then\n    echo \"Error: No YAML file specified.\" \u003e\u0026#x26;2\n    print_help\n    exit 1\nfi\n\n# 引数からYAMLファイルのパスを取得\nYAML_FILE=\"$1\"\n\n# YAMLファイルの存在チェック\nif [ ! -f \"$YAML_FILE\" ]; then\n    echo \"Error: File '$YAML_FILE' not found.\" \u003e\u0026#x26;2\n    exit 1\nfi\n\n# キーをfzfで選択\nselected_key=$(yq e 'keys | .[]' \"$YAML_FILE\" | fzf)\n\n# キーが選択されていない場合\nif [ -z \"$selected_key\" ]; then\n    echo \"No key selected.\" \u003e\u0026#x26;2\n    exit 1\nfi\n\n# 選択されたキーに対応する値を取得\nselected_value=$(yq e \".${selected_key}\" \"$YAML_FILE\")\n\n# 値を標準出力に表示\necho \"$selected_value\"\nexit 0\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e上のコマンドを \u003ccode\u003efzf-keyvalue-select\u003c/code\u003e という名前でパスを通しておく。その上で以下のような関数を登録しておくと便利。\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-fish\"\u003efunction notion\n    set url (fzf-keyvalue-select ~/.local/fish/notion.yaml)\n    and open $url\nend\n\u003c/code\u003e\u003c/pre\u003e3:[[\"$\",\"article\",null,{\"children\":[[\"$\",\"h1\",null,{\"children\":\"2024-11-13\"}],[\"$\",\"time\",null,{\"children\":\"2024-11-13T19:02:20+09:00\"}],[\"$\",\"div\",null,{\"dangerouslySetInn"])</script><script>self.__next_f.push([1,"erHTML\":{\"__html\":\"$b\"}}]]}],[\"$\",\"span\",null,{\"style\":{\"marginInline\":\"5px\"},\"children\":[\"$\",\"a\",null,{\"href\":\"/posts/2024-11-09\",\"children\":\"\u003c 2024-11-09\"}]}],[\"$\",\"span\",null,{\"style\":{\"marginInline\":\"5px\"},\"children\":[\"$\",\"a\",null,{\"href\":\"/posts/2024-11-20\",\"children\":\"2024-11-20 \u003e\"}]}]]\n8:[[\"$\",\"meta\",\"0\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}],[\"$\",\"meta\",\"1\",{\"charSet\":\"utf-8\"}],[\"$\",\"title\",\"2\",{\"children\":\"2024-11-13 | diary.nfurudono.com\"}],[\"$\",\"meta\",\"3\",{\"name\":\"description\",\"content\":\"fzfで表示される選択肢と選択した結果得られる値を分けられるようにしたいので作った。yamlでkey-valueペアのリストを保持しておいて、そのキーの選択をfzfで行い、得られる値はvalueである、みたいな感じ。\"}],[\"$\",\"link\",\"4\",{\"rel\":\"author\",\"href\":\"https://blog.nfurudono.com/profile/\"}],[\"$\",\"meta\",\"5\",{\"name\":\"author\",\"content\":\"Naoya Furudono\"}]]\n2:null\n"])</script></body></html>

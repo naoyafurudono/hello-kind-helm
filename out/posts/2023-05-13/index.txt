@@ -1,0 +1,67 @@
+3:I[4707,[],""]
+5:I[6423,[],""]
+6:I[2972,["972","static/chunks/972-f708ded502b3627d.js","185","static/chunks/app/layout-aa1129b13619db0b.js"],""]
+4:["id","2023-05-13","d"]
+0:["N2S61W7SgBtvfjyLIwY7-",[[["",{"children":["posts",{"children":[["id","2023-05-13","d"],{"children":["__PAGE__?{\"id\":\"2023-05-13\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["posts",{"children":[["id","2023-05-13","d"],{"children":["__PAGE__",{},[["$L1","$L2",null],null],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[[null,["$","html",null,{"lang":"ja","children":[["$","style",null,{"children":"\n[id] {\n  border: 2px solid transparent; /* 初期のボーダー */\n  transition: all 0.3s ease; /* トランジション効果 */\n  cursor: pointer; /* カーソルをポインタにする */\n}\n\n[id]:hover {\n  background-color: #f0f0f0; /* 背景色を変更 */\n  border-color: #007bff; /* ボーダーの色を変更 */\n  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* シャドウを追加 */\n}\n\n[id]:focus {\n  outline: none; /* デフォルトのアウトラインを消す */\n  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* フォーカス時の影を追加 */\n}\n\t\t"}],["$","body",null,{"children":[["$","header",null,{"children":["$","nav",null,{"children":["$","ul",null,{"children":[["$","li","/",{"children":["$","$L6",null,{"href":"/","children":"diary.nfurudono.com"}]}],["$","li","/todos/",{"children":["$","$L6",null,{"href":"/todos/","children":"todos"}]}],["$","li","https://twitter.com/furudono2",{"children":["$","$L6",null,{"href":"https://twitter.com/furudono2","children":"書いてる人のTwitter"}]}],["$","li","https://zenn.dev/nfurudono",{"children":["$","$L6",null,{"href":"https://zenn.dev/nfurudono","children":"最近の技術記事（Zenn、試しに使っています）"}]}],["$","li","https://blog.nfurudono.com",{"children":["$","$L6",null,{"href":"https://blog.nfurudono.com","children":"技術記事"}]}]]}]}]}],["$","main",null,{"children":["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[]}]}],["$","footer",null,{"children":["$","nav",null,{"children":["$","ul",null,{"children":[["$","li","/",{"children":["$","$L6",null,{"href":"/","children":"diary.nfurudono.com"}]}],["$","li","/todos/",{"children":["$","$L6",null,{"href":"/todos/","children":"todos"}]}],["$","li","https://twitter.com/furudono2",{"children":["$","$L6",null,{"href":"https://twitter.com/furudono2","children":"書いてる人のTwitter"}]}],["$","li","https://zenn.dev/nfurudono",{"children":["$","$L6",null,{"href":"https://zenn.dev/nfurudono","children":"最近の技術記事（Zenn、試しに使っています）"}]}],["$","li","https://blog.nfurudono.com",{"children":["$","$L6",null,{"href":"https://blog.nfurudono.com","children":"技術記事"}]}]]}]}]}]]}]]}]],null],null],["$L7",null]]]]
+8:T199d,<h2 id="今日はrustを少し勉強している" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;">今日はRustを少し勉強している</h2>
+<p>もともと<code>bash</code>で書いていたスクリプトを拡張したくなって、普段ならPythonで書くところを今日は新しいことをしてみようということでRustをつかってみることにした。</p>
+<h3 id="苦労話し" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;">苦労話し</h3>
+<p>Rustはまったく初めてと言うわけではなくて、ちらちらドキュメントを読んだり、ノリで学校の課題をRustで書いてみたり（痛い目にあった）したことがある。所有権のあたりで苦労はあまりしなかった（というかPythonっぽくヒープを贅沢に使うコードを書いた）のだが、<code>Result</code> / <code>Option</code>の変換で発狂しかけた（メソッドが定義されていることに思いをはせられずに自作してしまった）。</p>
+<p>あまり苦労しなかったと言いつつ、所有権のあたりで困りはしている。参照を受け取るコンストラクタに、その場で作ったオブジェクトを渡したいときに、一旦変数に束縛しないと、渡すオブジェクトが即死してしまっていけない問題が面倒。名前をつけるまでもない、式が体をを表しているような値にまで名前をつかないといけないのはしんどい。コンストラクタが所有権を奪うようにすればよいのだろうか。いらないから参照にしたのだよな...。</p>
+<h3 id="とはいえ楽しい" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;">とはいえ楽しい</h3>
+<p>今ではそこそこなれてきて、代数的データ型とまともな型検査器がついたPythonくらいの書き方はできるようになった。Rustのライブラリがイケイケに作られていて（エラー処理周りは辛いと感じるけど）、プログラムを書いていて楽しい。<a href="https://github.com/naoyafurudono/naoyafurudono.github.io/commit/5dffad6d10406fa83c4d9dd8eaa91a3c769a553f">すごく汚く書いてしまった</a>。当面の目標はまともにかけるようになることかな？ちょっとしたCLIでは大差ないのかもしれないけど。</p>
+<p>ブログのGitHubのプログラミング言語構成比がカオスなことになってきた。</p>
+<h2 id="胃腸炎について" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;">胃腸炎について</h2>
+<p>ここ何日か胃腸炎でつらい。今日はだいぶ回復して、Rustを勉強できるくらいになったけど、まだつらみを感じる。とはいえ三食たべても大丈夫な体に戻りはしたので問題なし。何日か会社に行けなかったのがなかなか悲しい。</p>
+<p>今日は以前もらい忘れた診断書を書いていただいた。前回の診療に対して診断書を出してもらうことはなんだか難しそうで、もう一度診察していただくことになってしまった。自分の中では治ったと思っていたけど、見ていただいたらまだ治っていないとのことだったし、今はそう感じる（流されやすい性格なのか？）ので、忠告していただけてよかったと思うことにしている。</p>
+<h2 id="食器を買った" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;">食器を買った</h2>
+<p>病院の帰り道で食器のフリマ的なことを日本料理屋さんがやっていた。普段使っている食器を入れ替えるのかなにかで、安く売り出してくださっていたようだ。胃腸炎になるまえに、会社のランチで「おいしそうな自炊の写真はくろっぽい器が大切」とのアドバイスを頂いていたことを覚えていたので、これは運命だと思い食器を購入した。黒っぽい器はどんぶりしか出会えなかったけど、それがなかなかいい感じだし、白っぽい器もいい感じのにいくつか巡り会えたのでほくほくしている。</p>
+<p>あとはおいしそうなご飯をつくればよい。</p>
+<h3 id="追記" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;">追記</h3>
+<p>夕飯につかってみた。いい感じ。味噌汁のお椀（蓋付き）が小さいやつで、フリーズドライの味噌汁一杯分しか入らないやつ（褒めてる）。感動している。</p>
+<h2 id="キルラキルがおもしろい" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;">キルラキルがおもしろい</h2>
+<p><a href="https://www.amazon.co.jp/%E3%82%AD%E3%83%AB%E3%83%A9%E3%82%AD%E3%83%AB/dp/B074BH9KHP">（アマプラ）</a>。グレンラガンの監督？が制作しているらしい。ノリが楽しい。</p>2:[["$","article",null,{"children":[["$","h1",null,{"children":"2023-05-13"}],["$","time",null,{"children":"2023-05-13T20:38:25+09:00"}],["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$8"}}]]}],["$","span",null,{"style":{"marginInline":"5px"},"children":["$","a",null,{"href":"/posts/2023-05-09","children":"< 2023-05-09"}]}],["$","span",null,{"style":{"marginInline":"5px"},"children":["$","a",null,{"href":"/posts/2023-05-14","children":"2023-05-14 >"}]}]]
+7:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"2023-05-13 | diary.nfurudono.com"}],["$","meta","3",{"name":"description","content":"もともとbashで書いていたスクリプトを拡張したくなって、普段ならPythonで書くところを今日は新しいことをしてみようということでRustをつかってみることにした。"}],["$","link","4",{"rel":"author","href":"https://blog.nfurudono.com/profile/"}],["$","meta","5",{"name":"author","content":"Naoya Furudono"}]]
+1:null

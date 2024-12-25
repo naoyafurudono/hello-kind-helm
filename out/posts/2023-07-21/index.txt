@@ -1,0 +1,138 @@
+3:I[4707,[],""]
+5:I[6423,[],""]
+6:I[2972,["972","static/chunks/972-f708ded502b3627d.js","185","static/chunks/app/layout-aa1129b13619db0b.js"],""]
+4:["id","2023-07-21","d"]
+0:["N2S61W7SgBtvfjyLIwY7-",[[["",{"children":["posts",{"children":[["id","2023-07-21","d"],{"children":["__PAGE__?{\"id\":\"2023-07-21\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["posts",{"children":[["id","2023-07-21","d"],{"children":["__PAGE__",{},[["$L1","$L2",null],null],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[[null,["$","html",null,{"lang":"ja","children":[["$","style",null,{"children":"\n[id] {\n  border: 2px solid transparent; /* 初期のボーダー */\n  transition: all 0.3s ease; /* トランジション効果 */\n  cursor: pointer; /* カーソルをポインタにする */\n}\n\n[id]:hover {\n  background-color: #f0f0f0; /* 背景色を変更 */\n  border-color: #007bff; /* ボーダーの色を変更 */\n  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* シャドウを追加 */\n}\n\n[id]:focus {\n  outline: none; /* デフォルトのアウトラインを消す */\n  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* フォーカス時の影を追加 */\n}\n\t\t"}],["$","body",null,{"children":[["$","header",null,{"children":["$","nav",null,{"children":["$","ul",null,{"children":[["$","li","/",{"children":["$","$L6",null,{"href":"/","children":"diary.nfurudono.com"}]}],["$","li","/todos/",{"children":["$","$L6",null,{"href":"/todos/","children":"todos"}]}],["$","li","https://twitter.com/furudono2",{"children":["$","$L6",null,{"href":"https://twitter.com/furudono2","children":"書いてる人のTwitter"}]}],["$","li","https://zenn.dev/nfurudono",{"children":["$","$L6",null,{"href":"https://zenn.dev/nfurudono","children":"最近の技術記事（Zenn、試しに使っています）"}]}],["$","li","https://blog.nfurudono.com",{"children":["$","$L6",null,{"href":"https://blog.nfurudono.com","children":"技術記事"}]}]]}]}]}],["$","main",null,{"children":["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[]}]}],["$","footer",null,{"children":["$","nav",null,{"children":["$","ul",null,{"children":[["$","li","/",{"children":["$","$L6",null,{"href":"/","children":"diary.nfurudono.com"}]}],["$","li","/todos/",{"children":["$","$L6",null,{"href":"/todos/","children":"todos"}]}],["$","li","https://twitter.com/furudono2",{"children":["$","$L6",null,{"href":"https://twitter.com/furudono2","children":"書いてる人のTwitter"}]}],["$","li","https://zenn.dev/nfurudono",{"children":["$","$L6",null,{"href":"https://zenn.dev/nfurudono","children":"最近の技術記事（Zenn、試しに使っています）"}]}],["$","li","https://blog.nfurudono.com",{"children":["$","$L6",null,{"href":"https://blog.nfurudono.com","children":"技術記事"}]}]]}]}]}]]}]]}]],null],null],["$L7",null]]]]
+8:Tdd1,<h2 id="自作cコンパイラの進捗" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;">自作Cコンパイラの進捗</h2>
+<p><a href="https://github.com/naoyafurudono/comp">https://github.com/naoyafurudono/comp</a></p>
+<p>早いもので作り始めてから2週間たったみたい。もっとサクサク進むと思っていたのだけど、しばらく楽しめそう。</p>
+<p>自作CコンパイラでCのプログラムの一部をコンパイルできるようになった。これまでは変数宣言をできなかったので型宣言のあるmain関数を読めなかったが、intだけ許容するようになったので、初めてCのプログラムをコンパイラが受け付けたことになる。</p>
+<p>こんなコードをコンパイルすると、</p>
+<pre><code class="language-c">int main()
+{ 
+  int a; int b; int i;
+  a=0; b=1; i=0;
+  while(i &#x3C; 10)
+  { 
+    int t; 
+    t=a+b; a=b; b=t; 
+    i=i+1; 
+  }
+  return a;
+}
+</code></pre>
+<p>こんなアセンブリを吐く。SSAみたいな中間表現を挟んでレジスタ割り付けを真面目にやるのはいつがいいんだろうか。</p>
+<pre><code class="language-arm64">.globl _main
+.text
+.balign 4
+_main:
+    stp x29, x30, [SP, #-16]!
+    mov x29, SP
+    sub SP, SP, #32
+    mov x0, #-16
+    str x0, [SP, #-16]!
+    mov x0, #0
+    str x0, [SP, #-16]!
+    ldr x0, [SP], #16
+    ldr x1, [SP], #16
+    str x0, [x29, x1]
+    str x0, [SP, #-16]!
+    mov x0, #-24
+    str x0, [SP, #-16]!
+    mov x0, #1
+    str x0, [SP, #-16]!
+    ldr x0, [SP], #16
+    ldr x1, [SP], #16
+    str x0, [x29, x1]
+    str x0, [SP, #-16]!
+    mov x0, #-32
+    str x0, [SP, #-16]!
+    mov x0, #0
+    str x0, [SP, #-16]!
+    ldr x0, [SP], #16
+    ldr x1, [SP], #16
+    str x0, [x29, x1]
+    str x0, [SP, #-16]!
+.L0:
+    mov x1, -32
+    ldr x0, [x29, x1]
+    str x0, [SP, #-16]!
+    mov x0, #10
+    str x0, [SP, #-16]!
+    ldr x1, [SP], #16
+    ldr x0, [SP], #16
+    cmp x0, x1
+    cset x0, lt
+    str x0, [SP, #-16]!
+    ldr x0, [SP], #16
+    cbz x0, .L1
+    mov x0, #-40
+    str x0, [SP, #-16]!
+    mov x1, -16
+    ldr x0, [x29, x1]
+    str x0, [SP, #-16]!
+    mov x1, -24
+    ldr x0, [x29, x1]
+    str x0, [SP, #-16]!
+    ldr x1, [SP], #16
+    ldr x0, [SP], #16
+    add x0, x0, x1
+    str x0, [SP, #-16]!
+    ldr x0, [SP], #16
+    ldr x1, [SP], #16
+    str x0, [x29, x1]
+    str x0, [SP, #-16]!
+    mov x0, #-16
+    str x0, [SP, #-16]!
+    mov x1, -24
+    ldr x0, [x29, x1]
+    str x0, [SP, #-16]!
+    ldr x0, [SP], #16
+    ldr x1, [SP], #16
+    str x0, [x29, x1]
+    str x0, [SP, #-16]!
+    mov x0, #-24
+    str x0, [SP, #-16]!
+    mov x1, -40
+    ldr x0, [x29, x1]
+    str x0, [SP, #-16]!
+    ldr x0, [SP], #16
+    ldr x1, [SP], #16
+    str x0, [x29, x1]
+    str x0, [SP, #-16]!
+    mov x0, #-32
+    str x0, [SP, #-16]!
+    mov x1, -32
+    ldr x0, [x29, x1]
+    str x0, [SP, #-16]!
+    mov x0, #1
+    str x0, [SP, #-16]!
+    ldr x1, [SP], #16
+    ldr x0, [SP], #16
+    add x0, x0, x1
+    str x0, [SP, #-16]!
+    ldr x0, [SP], #16
+    ldr x1, [SP], #16
+    str x0, [x29, x1]
+    str x0, [SP, #-16]!
+    b .L0
+.L1:
+    mov x1, -16
+    ldr x0, [x29, x1]
+    str x0, [SP, #-16]!
+    ldr x0, [SP], #16
+    mov SP, x29
+    ldp x29, x30, [SP], #16
+    ret
+    mov SP, x29
+    ldp x29, x30, [SP], #16
+    ret
+</code></pre>2:[["$","article",null,{"children":[["$","h1",null,{"children":"2023-07-21"}],["$","time",null,{"children":"2023-07-21T23:18:37+09:00"}],["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$8"}}]]}],["$","span",null,{"style":{"marginInline":"5px"},"children":["$","a",null,{"href":"/posts/2023-07-19","children":"< 2023-07-19"}]}],["$","span",null,{"style":{"marginInline":"5px"},"children":["$","a",null,{"href":"/posts/2023-07-22","children":"2023-07-22 >"}]}]]
+7:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"2023-07-21 | diary.nfurudono.com"}],["$","meta","3",{"name":"description","content":"https://github.com/naoyafurudono/comp"}],["$","link","4",{"rel":"author","href":"https://blog.nfurudono.com/profile/"}],["$","meta","5",{"name":"author","content":"Naoya Furudono"}]]
+1:null

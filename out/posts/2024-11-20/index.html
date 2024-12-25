@@ -1,0 +1,183 @@
+<!DOCTYPE html><html lang="ja"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="preload" as="script" fetchPriority="low" href="/_next/static/chunks/webpack-100b9e646d9c912e.js"/><script src="/_next/static/chunks/fd9d1056-749e5812300142af.js" async=""></script><script src="/_next/static/chunks/117-0773d3d7d828a895.js" async=""></script><script src="/_next/static/chunks/main-app-47eeba86d2ddfbea.js" async=""></script><script src="/_next/static/chunks/972-f708ded502b3627d.js" async=""></script><script src="/_next/static/chunks/app/layout-aa1129b13619db0b.js" async=""></script><title>2024-11-20 | diary.nfurudono.com</title><meta name="description" content="以下のようなprotoスキーマを定義する。"/><link rel="author" href="https://blog.nfurudono.com/profile/"/><meta name="author" content="Naoya Furudono"/><script src="/_next/static/chunks/polyfills-42372ed130431b0a.js" noModule=""></script></head><style>
+[id] {
+  border: 2px solid transparent; /* 初期のボーダー */
+  transition: all 0.3s ease; /* トランジション効果 */
+  cursor: pointer; /* カーソルをポインタにする */
+}
+
+[id]:hover {
+  background-color: #f0f0f0; /* 背景色を変更 */
+  border-color: #007bff; /* ボーダーの色を変更 */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* シャドウを追加 */
+}
+
+[id]:focus {
+  outline: none; /* デフォルトのアウトラインを消す */
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* フォーカス時の影を追加 */
+}
+		</style><body><header><nav><ul><li><a href="/">diary.nfurudono.com</a></li><li><a href="/todos/">todos</a></li><li><a href="https://twitter.com/furudono2">書いてる人のTwitter</a></li><li><a href="https://zenn.dev/nfurudono">最近の技術記事（Zenn、試しに使っています）</a></li><li><a href="https://blog.nfurudono.com">技術記事</a></li></ul></nav></header><main><article><h1>2024-11-20</h1><time>2024-11-20T23:41:11+09:00</time><div><h2 id="スキーマ駆動cliツール開発を支援するツールをprotoに乗っかって作りたい" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;">スキーマ駆動CLIツール開発を支援するツールをprotoに乗っかって作りたい</h2>
+<ul class="contains-task-list">
+<li class="task-list-item"><svg id="SatV_tJKFI-IRwms5VVFojN3PPiVl0xsPlO2BS46WFg" viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg><input type="checkbox" checked disabled> proto2cliを実装する
+<ul>
+<li>やった
+<ul>
+<li>zennに紹介記事を書いた <a href="https://zenn.dev/nfurudono/articles/719e3aafac6065">https://zenn.dev/nfurudono/articles/719e3aafac6065</a></li>
+<li>kamakura.go #7で発表した <a href="https://kamakurago.connpass.com/event/336353/">https://kamakurago.connpass.com/event/336353/</a>
+<ul>
+<li>スライドはこれ <a href="https://speakerdeck.com/naoyafurudono/protocol-bufferssukimading-yi-kara-gonocliwosheng-cheng-suru">https://speakerdeck.com/naoyafurudono/protocol-bufferssukimading-yi-kara-gonocliwosheng-cheng-suru</a></li>
+</ul>
+</li>
+<li>まだ本番環境に組み込めてないのと、機能開発とか開発環境の整備ができていない。やる</li>
+</ul>
+</li>
+<li>名前を決める：connectはブラウザやgRPCと互換性のあるAPIを提供するのに必要なボイラープレートが必要なのを軽減してくれるやつ。
+<ul>
+<li>これはそれらにCLIをインターフェースとして加える。つまりローカルから、サーバを立てる事なく実行できるようにする。そういう立ち位置がいい。単にインターフェースを一個加えるだけ。実装はできるだけシェアしたい。</li>
+<li>まずはconnectを採用するアプリケーションを一個用意して、それにCLIを入れる。ここで上手い入れ方を探る</li>
+<li>次にその入れる作業を自動化する。そのためのCLIがproto2cli</li>
+</ul>
+</li>
+<li>サブコマンドでサービス、位置引数でメソッド、フラグ引数(<code>-d</code>)でリクエストメッセージを受け取る。
+<ul>
+<li>サブコマンドと位置引数は最初は特に区別しなくていいか。 <code>cmd &#x3C;service> &#x3C;method> -d &#x3C;request message json></code> の形式で呼び出すだけ。</li>
+<li>CLIへの入力はそのままサービス名、メソッド名、リクエストメッセージがそれぞれbyte列かstringのどちらかで得られる。それらをなんとかするのは一旦別のコンポーネントの役割にしよう</li>
+<li>ここまでは普通にflagsパッケージとかを使うだけでいける</li>
+</ul>
+</li>
+<li>次にリクエストメッセージのデコードを自動化する。
+<ul>
+<li><code>func unmarshalRPC(service, method, req string) (MessageInterface, error)</code>
+<ul>
+<li>対応する型のunmarshellerへのディスパッチとその呼び出しが責務</li>
+</ul>
+</li>
+<li><code>dispatchUnMarshelelr(service, method string) (func(byte[], MessageInterface) error, error)</code>
+<ul>
+<li>ディスパッチだけでも良さそう</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>次に、サービスの呼び出しを行う
+<ul>
+<li>connect サーバをclient経由で呼び出す</li>
+<li>単にサービスを呼び出す
+<ul>
+<li>インターセプタを通過できない、特にproto validateを通せない</li>
+</ul>
+</li>
+<li>インターセプタとサービスを合成する
+<ul>
+<li>できればhttpサーバの仕組みに乗っかりたい</li>
+<li>でも無理がありそう、intercepter (unaryfunc) を受け入れてデコレートする感じにしそう</li>
+</ul>
+</li>
+</ul>
+</li>
+<li></li>
+</ul>
+</li>
+</ul>
+<p>以下のようなprotoスキーマを定義する。</p>
+<pre><code class="language-proto">syntax = "proto3";
+
+package nfurudono.sample.v1;
+
+service SamplService {
+  rpc Say(SayRequest) returns (SayResponse) {}
+}
+
+// SayRequest is a single-sentence request.
+message SayRequest {
+  string sentence = 1;
+}
+
+// SayResponse is a single-sentence response.
+message SayResponse {
+  string sentence = 1;
+  bool dry_run = 2;
+}
+</code></pre>
+<p>こんな定義があるときに</p>
+<pre><code class="language-sh">$ ./sample say --sentence "hello world" --dryrun
+sentence: "I will say: hello world"
+</code></pre>
+<p>みたいなやりとりを定義するためのCLIテンプレート生成ツールを作る。あくまでテンプレートなので、生成ツールではインターフェースとかグルーコードだけ提供して、ユーザは以下のようなコードを書くことになる。</p>
+<ul>
+<li>connectとかでサービスとサーバの起動を定義してmainからいい感じに呼ぶようにすると、gRPCサーバがたつのに対して、</li>
+<li>CLIテンプレート作成ツールでサービスとCLIコマンドの呼び出しを定義してmainからいい感じに呼ぶようにすると、CLIから実行できる</li>
+</ul>
+<h3 id="サービスの実装" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;">サービスの実装</h3>
+<pre><code class="language-go">package service
+
+improt (
+	"fmt"
+	
+  sample "github.com/nfurudono/gen/go/sample"
+)
+
+type SampleImpl struct {}
+// sample.SampleServiceはprotocとかが生成するようなinterface。gRPCとかconnectとかで使われているようなやつ。
+var _ sample.SampleService = &#x26;NewSampleImpl()
+
+func NewSampleImpl() { return SampleImple{} }
+
+func (* SampleImpl) Say(ctx *context.Context, req *connect.Request[samplev1.SayRequest]) (*connect.Response[samplev1.Response], error) {
+	s := req.GetSentence()
+	d := req.GetDryRun()
+	if d {
+		return fmt.Sprintf("I will say: %s", s), nil
+	}
+	return fmt.Sprintf("%s!!", s), nil
+}
+</code></pre>
+<h3 id="エントリポイント" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;">エントリポイント</h3>
+<pre><code class="language-go">package main
+
+import (
+	slog
+	
+	tool "github.com/naoyafurudono/good-tool"
+	"github.com/naoyafurudono/sample-cli/service"
+)
+
+func main() {
+	s := service.NewSampleImpl()
+	// NewCLI()の結果（CLI）はサービスを登録される。
+	// サービスを保持するCLIはサービスが契約するrpc（名前、入力、出力）を知っている。
+	// これらはprotoの仕組みで生成される。protovalidateなどのプラグインもそのレイヤで対応できるはず。
+	cli := tool.NewCLI().AddService(s)  // このあたりのインターフェースはもうちょい考えても良いかも？
+	// Runがコマンドライン引数を読んで以下を半ドアリングする
+	//   - 呼び出すrpcの判定（ルーティング）、サブコマンドの名前が対応する
+	//   - rpcに渡す入力messageのデコード、サブコマンドへのフラグ引数が対応する
+	//   - rpcの出力メッセージやエラー内容の出力、コマンドの標準出力、標準エラー出力、コマンドのステータスコードの出しわけが対応する
+	if err := cli.Run(); err != nil {
+		slog.Fatalf("unexpected inpu: %w", err)  // 予期しないサブコマンドが来たらエラーを返すのもまた一興かな。
+	}
+}
+</code></pre>
+<p>便利じゃない？</p></div></article><span style="margin-inline:5px"><a href="/posts/2024-11-13">&lt; 2024-11-13</a></span><span style="margin-inline:5px"><a href="/posts/2024-11-25">2024-11-25 &gt;</a></span></main><footer><nav><ul><li><a href="/">diary.nfurudono.com</a></li><li><a href="/todos/">todos</a></li><li><a href="https://twitter.com/furudono2">書いてる人のTwitter</a></li><li><a href="https://zenn.dev/nfurudono">最近の技術記事（Zenn、試しに使っています）</a></li><li><a href="https://blog.nfurudono.com">技術記事</a></li></ul></nav></footer><script src="/_next/static/chunks/webpack-100b9e646d9c912e.js" async=""></script><script>(self.__next_f=self.__next_f||[]).push([0]);self.__next_f.push([2,null])</script><script>self.__next_f.push([1,"1:I[2846,[],\"\"]\n4:I[4707,[],\"\"]\n6:I[6423,[],\"\"]\n7:I[2972,[\"972\",\"static/chunks/972-f708ded502b3627d.js\",\"185\",\"static/chunks/app/layout-aa1129b13619db0b.js\"],\"\"]\n9:I[1060,[],\"\"]\n5:[\"id\",\"2024-11-20\",\"d\"]\na:[]\n"])</script><script>self.__next_f.push([1,"0:[\"$\",\"$L1\",null,{\"buildId\":\"N2S61W7SgBtvfjyLIwY7-\",\"assetPrefix\":\"\",\"urlParts\":[\"\",\"posts\",\"2024-11-20\",\"\"],\"initialTree\":[\"\",{\"children\":[\"posts\",{\"children\":[[\"id\",\"2024-11-20\",\"d\"],{\"children\":[\"__PAGE__?{\\\"id\\\":\\\"2024-11-20\\\"}\",{}]}]}]},\"$undefined\",\"$undefined\",true],\"initialSeedData\":[\"\",{\"children\":[\"posts\",{\"children\":[[\"id\",\"2024-11-20\",\"d\"],{\"children\":[\"__PAGE__\",{},[[\"$L2\",\"$L3\",null],null],null]},[null,[\"$\",\"$L4\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\",\"posts\",\"children\",\"$5\",\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"notFoundStyles\":\"$undefined\"}]],null]},[null,[\"$\",\"$L4\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\",\"posts\",\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"notFoundStyles\":\"$undefined\"}]],null]},[[null,[\"$\",\"html\",null,{\"lang\":\"ja\",\"children\":[[\"$\",\"style\",null,{\"children\":\"\\n[id] {\\n  border: 2px solid transparent; /* 初期のボーダー */\\n  transition: all 0.3s ease; /* トランジション効果 */\\n  cursor: pointer; /* カーソルをポインタにする */\\n}\\n\\n[id]:hover {\\n  background-color: #f0f0f0; /* 背景色を変更 */\\n  border-color: #007bff; /* ボーダーの色を変更 */\\n  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* シャドウを追加 */\\n}\\n\\n[id]:focus {\\n  outline: none; /* デフォルトのアウトラインを消す */\\n  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* フォーカス時の影を追加 */\\n}\\n\\t\\t\"}],[\"$\",\"body\",null,{\"children\":[[\"$\",\"header\",null,{\"children\":[\"$\",\"nav\",null,{\"children\":[\"$\",\"ul\",null,{\"children\":[[\"$\",\"li\",\"/\",{\"children\":[\"$\",\"$L7\",null,{\"href\":\"/\",\"children\":\"diary.nfurudono.com\"}]}],[\"$\",\"li\",\"/todos/\",{\"children\":[\"$\",\"$L7\",null,{\"href\":\"/todos/\",\"children\":\"todos\"}]}],[\"$\",\"li\",\"https://twitter.com/furudono2\",{\"children\":[\"$\",\"$L7\",null,{\"href\":\"https://twitter.com/furudono2\",\"children\":\"書いてる人のTwitter\"}]}],[\"$\",\"li\",\"https://zenn.dev/nfurudono\",{\"children\":[\"$\",\"$L7\",null,{\"href\":\"https://zenn.dev/nfurudono\",\"children\":\"最近の技術記事（Zenn、試しに使っています）\"}]}],[\"$\",\"li\",\"https://blog.nfurudono.com\",{\"children\":[\"$\",\"$L7\",null,{\"href\":\"https://blog.nfurudono.com\",\"children\":\"技術記事\"}]}]]}]}]}],[\"$\",\"main\",null,{\"children\":[\"$\",\"$L4\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":\"404\"}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],\"notFoundStyles\":[]}]}],[\"$\",\"footer\",null,{\"children\":[\"$\",\"nav\",null,{\"children\":[\"$\",\"ul\",null,{\"children\":[[\"$\",\"li\",\"/\",{\"children\":[\"$\",\"$L7\",null,{\"href\":\"/\",\"children\":\"diary.nfurudono.com\"}]}],[\"$\",\"li\",\"/todos/\",{\"children\":[\"$\",\"$L7\",null,{\"href\":\"/todos/\",\"children\":\"todos\"}]}],[\"$\",\"li\",\"https://twitter.com/furudono2\",{\"children\":[\"$\",\"$L7\",null,{\"href\":\"https://twitter.com/furudono2\",\"children\":\"書いてる人のTwitter\"}]}],[\"$\",\"li\",\"https://zenn.dev/nfurudono\",{\"children\":[\"$\",\"$L7\",null,{\"href\":\"https://zenn.dev/nfurudono\",\"children\":\"最近の技術記事（Zenn、試しに使っています）\"}]}],[\"$\",\"li\",\"https://blog.nfurudono.com\",{\"children\":[\"$\",\"$L7\",null,{\"href\":\"https://blog.nfurudono.com\",\"children\":\"技術記事\"}]}]]}]}]}]]}]]}]],null],null],\"couldBeIntercepted\":false,\"initialHead\":[null,\"$L8\"],\"globalErrorComponent\":\"$9\",\"missingSlots\":\"$Wa\"}]\n"])</script><script>self.__next_f.push([1,"b:T2263,"])</script><script>self.__next_f.push([1,"\u003ch2 id=\"スキーマ駆動cliツール開発を支援するツールをprotoに乗っかって作りたい\" onclick=\"\n          event.preventDefault();\n          const url = window.location.origin + window.location.pathname + \u0026#x27;#\u0026#x27; + this.id;\n          navigator.clipboard.writeText(url).then(_ =\u003e {\n            window.location.href = url;\n          })\n        \" style=\"cursor: pointer;\"\u003eスキーマ駆動CLIツール開発を支援するツールをprotoに乗っかって作りたい\u003c/h2\u003e\n\u003cul class=\"contains-task-list\"\u003e\n\u003cli class=\"task-list-item\"\u003e\u003csvg id=\"SatV_tJKFI-IRwms5VVFojN3PPiVl0xsPlO2BS46WFg\" viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" xmlns=\"http://www.w3.org/2000/svg\" onclick=\"\n          event.preventDefault();\n          const url = window.location.origin + window.location.pathname + \u0026#x27;#\u0026#x27; + this.id;\n          navigator.clipboard.writeText(url).then(_ =\u003e {\n            window.location.href = url;\n          })\n        \" style=\"cursor: pointer;\"\u003e\u003cpath d=\"m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z\"\u003e\u003c/path\u003e\u003c/svg\u003e\u003cinput type=\"checkbox\" checked disabled\u003e proto2cliを実装する\n\u003cul\u003e\n\u003cli\u003eやった\n\u003cul\u003e\n\u003cli\u003ezennに紹介記事を書いた \u003ca href=\"https://zenn.dev/nfurudono/articles/719e3aafac6065\"\u003ehttps://zenn.dev/nfurudono/articles/719e3aafac6065\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003ekamakura.go #7で発表した \u003ca href=\"https://kamakurago.connpass.com/event/336353/\"\u003ehttps://kamakurago.connpass.com/event/336353/\u003c/a\u003e\n\u003cul\u003e\n\u003cli\u003eスライドはこれ \u003ca href=\"https://speakerdeck.com/naoyafurudono/protocol-bufferssukimading-yi-kara-gonocliwosheng-cheng-suru\"\u003ehttps://speakerdeck.com/naoyafurudono/protocol-bufferssukimading-yi-kara-gonocliwosheng-cheng-suru\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003eまだ本番環境に組み込めてないのと、機能開発とか開発環境の整備ができていない。やる\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e名前を決める：connectはブラウザやgRPCと互換性のあるAPIを提供するのに必要なボイラープレートが必要なのを軽減してくれるやつ。\n\u003cul\u003e\n\u003cli\u003eこれはそれらにCLIをインターフェースとして加える。つまりローカルから、サーバを立てる事なく実行できるようにする。そういう立ち位置がいい。単にインターフェースを一個加えるだけ。実装はできるだけシェアしたい。\u003c/li\u003e\n\u003cli\u003eまずはconnectを採用するアプリケーションを一個用意して、それにCLIを入れる。ここで上手い入れ方を探る\u003c/li\u003e\n\u003cli\u003e次にその入れる作業を自動化する。そのためのCLIがproto2cli\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003eサブコマンドでサービス、位置引数でメソッド、フラグ引数(\u003ccode\u003e-d\u003c/code\u003e)でリクエストメッセージを受け取る。\n\u003cul\u003e\n\u003cli\u003eサブコマンドと位置引数は最初は特に区別しなくていいか。 \u003ccode\u003ecmd \u0026#x3C;service\u003e \u0026#x3C;method\u003e -d \u0026#x3C;request message json\u003e\u003c/code\u003e の形式で呼び出すだけ。\u003c/li\u003e\n\u003cli\u003eCLIへの入力はそのままサービス名、メソッド名、リクエストメッセージがそれぞれbyte列かstringのどちらかで得られる。それらをなんとかするのは一旦別のコンポーネントの役割にしよう\u003c/li\u003e\n\u003cli\u003eここまでは普通にflagsパッケージとかを使うだけでいける\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e次にリクエストメッセージのデコードを自動化する。\n\u003cul\u003e\n\u003cli\u003e\u003ccode\u003efunc unmarshalRPC(service, method, req string) (MessageInterface, error)\u003c/code\u003e\n\u003cul\u003e\n\u003cli\u003e対応する型のunmarshellerへのディスパッチとその呼び出しが責務\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003ccode\u003edispatchUnMarshelelr(service, method string) (func(byte[], MessageInterface) error, error)\u003c/code\u003e\n\u003cul\u003e\n\u003cli\u003eディスパッチだけでも良さそう\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e次に、サービスの呼び出しを行う\n\u003cul\u003e\n\u003cli\u003econnect サーバをclient経由で呼び出す\u003c/li\u003e\n\u003cli\u003e単にサービスを呼び出す\n\u003cul\u003e\n\u003cli\u003eインターセプタを通過できない、特にproto validateを通せない\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003eインターセプタとサービスを合成する\n\u003cul\u003e\n\u003cli\u003eできればhttpサーバの仕組みに乗っかりたい\u003c/li\u003e\n\u003cli\u003eでも無理がありそう、intercepter (unaryfunc) を受け入れてデコレートする感じにしそう\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e以下のようなprotoスキーマを定義する。\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-proto\"\u003esyntax = \"proto3\";\n\npackage nfurudono.sample.v1;\n\nservice SamplService {\n  rpc Say(SayRequest) returns (SayResponse) {}\n}\n\n// SayRequest is a single-sentence request.\nmessage SayRequest {\n  string sentence = 1;\n}\n\n// SayResponse is a single-sentence response.\nmessage SayResponse {\n  string sentence = 1;\n  bool dry_run = 2;\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eこんな定義があるときに\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-sh\"\u003e$ ./sample say --sentence \"hello world\" --dryrun\nsentence: \"I will say: hello world\"\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eみたいなやりとりを定義するためのCLIテンプレート生成ツールを作る。あくまでテンプレートなので、生成ツールではインターフェースとかグルーコードだけ提供して、ユーザは以下のようなコードを書くことになる。\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003econnectとかでサービスとサーバの起動を定義してmainからいい感じに呼ぶようにすると、gRPCサーバがたつのに対して、\u003c/li\u003e\n\u003cli\u003eCLIテンプレート作成ツールでサービスとCLIコマンドの呼び出しを定義してmainからいい感じに呼ぶようにすると、CLIから実行できる\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3 id=\"サービスの実装\" onclick=\"\n          event.preventDefault();\n          const url = window.location.origin + window.location.pathname + \u0026#x27;#\u0026#x27; + this.id;\n          navigator.clipboard.writeText(url).then(_ =\u003e {\n            window.location.href = url;\n          })\n        \" style=\"cursor: pointer;\"\u003eサービスの実装\u003c/h3\u003e\n\u003cpre\u003e\u003ccode class=\"language-go\"\u003epackage service\n\nimprot (\n\t\"fmt\"\n\t\n  sample \"github.com/nfurudono/gen/go/sample\"\n)\n\ntype SampleImpl struct {}\n// sample.SampleServiceはprotocとかが生成するようなinterface。gRPCとかconnectとかで使われているようなやつ。\nvar _ sample.SampleService = \u0026#x26;NewSampleImpl()\n\nfunc NewSampleImpl() { return SampleImple{} }\n\nfunc (* SampleImpl) Say(ctx *context.Context, req *connect.Request[samplev1.SayRequest]) (*connect.Response[samplev1.Response], error) {\n\ts := req.GetSentence()\n\td := req.GetDryRun()\n\tif d {\n\t\treturn fmt.Sprintf(\"I will say: %s\", s), nil\n\t}\n\treturn fmt.Sprintf(\"%s!!\", s), nil\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch3 id=\"エントリポイント\" onclick=\"\n          event.preventDefault();\n          const url = window.location.origin + window.location.pathname + \u0026#x27;#\u0026#x27; + this.id;\n          navigator.clipboard.writeText(url).then(_ =\u003e {\n            window.location.href = url;\n          })\n        \" style=\"cursor: pointer;\"\u003eエントリポイント\u003c/h3\u003e\n\u003cpre\u003e\u003ccode class=\"language-go\"\u003epackage main\n\nimport (\n\tslog\n\t\n\ttool \"github.com/naoyafurudono/good-tool\"\n\t\"github.com/naoyafurudono/sample-cli/service\"\n)\n\nfunc main() {\n\ts := service.NewSampleImpl()\n\t// NewCLI()の結果（CLI）はサービスを登録される。\n\t// サービスを保持するCLIはサービスが契約するrpc（名前、入力、出力）を知っている。\n\t// これらはprotoの仕組みで生成される。protovalidateなどのプラグインもそのレイヤで対応できるはず。\n\tcli := tool.NewCLI().AddService(s)  // このあたりのインターフェースはもうちょい考えても良いかも？\n\t// Runがコマンドライン引数を読んで以下を半ドアリングする\n\t//   - 呼び出すrpcの判定（ルーティング）、サブコマンドの名前が対応する\n\t//   - rpcに渡す入力messageのデコード、サブコマンドへのフラグ引数が対応する\n\t//   - rpcの出力メッセージやエラー内容の出力、コマンドの標準出力、標準エラー出力、コマンドのステータスコードの出しわけが対応する\n\tif err := cli.Run(); err != nil {\n\t\tslog.Fatalf(\"unexpected inpu: %w\", err)  // 予期しないサブコマンドが来たらエラーを返すのもまた一興かな。\n\t}\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e便利じゃない？\u003c/p\u003e"])</script><script>self.__next_f.push([1,"3:[[\"$\",\"article\",null,{\"children\":[[\"$\",\"h1\",null,{\"children\":\"2024-11-20\"}],[\"$\",\"time\",null,{\"children\":\"2024-11-20T23:41:11+09:00\"}],[\"$\",\"div\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"$b\"}}]]}],[\"$\",\"span\",null,{\"style\":{\"marginInline\":\"5px\"},\"children\":[\"$\",\"a\",null,{\"href\":\"/posts/2024-11-13\",\"children\":\"\u003c 2024-11-13\"}]}],[\"$\",\"span\",null,{\"style\":{\"marginInline\":\"5px\"},\"children\":[\"$\",\"a\",null,{\"href\":\"/posts/2024-11-25\",\"children\":\"2024-11-25 \u003e\"}]}]]\n8:[[\"$\",\"meta\",\"0\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}],[\"$\",\"meta\",\"1\",{\"charSet\":\"utf-8\"}],[\"$\",\"title\",\"2\",{\"children\":\"2024-11-20 | diary.nfurudono.com\"}],[\"$\",\"meta\",\"3\",{\"name\":\"description\",\"content\":\"以下のようなprotoスキーマを定義する。\"}],[\"$\",\"link\",\"4\",{\"rel\":\"author\",\"href\":\"https://blog.nfurudono.com/profile/\"}],[\"$\",\"meta\",\"5\",{\"name\":\"author\",\"content\":\"Naoya Furudono\"}]]\n2:null\n"])</script></body></html>

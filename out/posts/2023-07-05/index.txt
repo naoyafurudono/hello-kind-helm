@@ -1,0 +1,99 @@
+3:I[4707,[],""]
+5:I[6423,[],""]
+6:I[2972,["972","static/chunks/972-f708ded502b3627d.js","185","static/chunks/app/layout-aa1129b13619db0b.js"],""]
+4:["id","2023-07-05","d"]
+0:["N2S61W7SgBtvfjyLIwY7-",[[["",{"children":["posts",{"children":[["id","2023-07-05","d"],{"children":["__PAGE__?{\"id\":\"2023-07-05\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["posts",{"children":[["id","2023-07-05","d"],{"children":["__PAGE__",{},[["$L1","$L2",null],null],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[[null,["$","html",null,{"lang":"ja","children":[["$","style",null,{"children":"\n[id] {\n  border: 2px solid transparent; /* 初期のボーダー */\n  transition: all 0.3s ease; /* トランジション効果 */\n  cursor: pointer; /* カーソルをポインタにする */\n}\n\n[id]:hover {\n  background-color: #f0f0f0; /* 背景色を変更 */\n  border-color: #007bff; /* ボーダーの色を変更 */\n  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* シャドウを追加 */\n}\n\n[id]:focus {\n  outline: none; /* デフォルトのアウトラインを消す */\n  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* フォーカス時の影を追加 */\n}\n\t\t"}],["$","body",null,{"children":[["$","header",null,{"children":["$","nav",null,{"children":["$","ul",null,{"children":[["$","li","/",{"children":["$","$L6",null,{"href":"/","children":"diary.nfurudono.com"}]}],["$","li","/todos/",{"children":["$","$L6",null,{"href":"/todos/","children":"todos"}]}],["$","li","https://twitter.com/furudono2",{"children":["$","$L6",null,{"href":"https://twitter.com/furudono2","children":"書いてる人のTwitter"}]}],["$","li","https://zenn.dev/nfurudono",{"children":["$","$L6",null,{"href":"https://zenn.dev/nfurudono","children":"最近の技術記事（Zenn、試しに使っています）"}]}],["$","li","https://blog.nfurudono.com",{"children":["$","$L6",null,{"href":"https://blog.nfurudono.com","children":"技術記事"}]}]]}]}]}],["$","main",null,{"children":["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[]}]}],["$","footer",null,{"children":["$","nav",null,{"children":["$","ul",null,{"children":[["$","li","/",{"children":["$","$L6",null,{"href":"/","children":"diary.nfurudono.com"}]}],["$","li","/todos/",{"children":["$","$L6",null,{"href":"/todos/","children":"todos"}]}],["$","li","https://twitter.com/furudono2",{"children":["$","$L6",null,{"href":"https://twitter.com/furudono2","children":"書いてる人のTwitter"}]}],["$","li","https://zenn.dev/nfurudono",{"children":["$","$L6",null,{"href":"https://zenn.dev/nfurudono","children":"最近の技術記事（Zenn、試しに使っています）"}]}],["$","li","https://blog.nfurudono.com",{"children":["$","$L6",null,{"href":"https://blog.nfurudono.com","children":"技術記事"}]}]]}]}]}]]}]]}]],null],null],["$L7",null]]]]
+8:T2549,<h2 id="論理と哲学とプログラミング言語" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;">論理と哲学とプログラミング言語</h2>
+<p>プロトタイプベースのオブジェクト指向言語について、哲学の方面から議論したエッセイを読んだ。クラスベースなのは古典的なアリストテレス的な分類の考え方に基づくもので、プロトタイプベースなものはヴィトゲンシュタインっぽい考え方に基づくとのこと。</p>
+<p>アリストテレス的な考え方では、物事は分類できて、しかもいろんな分類があったとしても最高の分類みたいなものがある、みたいに捉えるそう。分類の中でその類を象徴する代表みたいなものも取れてしかるべきみたいな。一方でヴィトゲンシュタインっぽい考え方ではアリストテレス的なのには割と無理があって、そんな考え方が通用するのは数学の概念くらいとしていて、分類は観察する主体に依るし、文化とかの影響を受けるもので「科学」みたいに自然に導かれるようなものではない、みたいな考え方をするらしい。</p>
+<p>リアルワールドを表現、分類しようと思うと確かにヴィトゲンシュタインの方がしっくりくるというか、矛盾が少なさそうな雰囲気がする。だけど、独自の世界を作ろうと思うとヴィトゲンシュタインの考え方に基づくのは骨が折れそう。</p>
+<p>では、関数型言語とか意味論の人たちの視点だとどうなるだろうか。オブジェクト指向は哲学の話に基づいて議論しているみたいだが、型システムとか意味論は論理学をベースにしがち。型は命題でプログラムは証明。</p>
+<p>ところで</p>
+<blockquote>
+<p>型は命題でプログラムは証明。</p>
+</blockquote>
+<p>この標語はしっくりきていない。型に入る_項_を僕は証明だとは思えない。依存型は項に依存する型だとは思えるけど、証明に依存する型と言われるとなんだかなと思う。まあ、その項にも型をつけるので、その型の証明にはなっているのだけど。Numみたいな型を命題というのがしっくりこないのと同じか。</p>
+<p>依存型でも依存する項の型が関数型とかの命題っぽい型だったら証明に依存している雰囲気を味わえるかもしれない。帰着を考えればいいのかな。この命題が成り立つなら、これこれが成り立つ。これは依存型じゃないな。帰着は型をとって型を返すだけなので、type operatorだ。</p>
+<p>ところでラフロイグの10年おいしい。</p>
+<p>nが2より大きい、みたいな命題は依存型がないと表現できないか。簡単だ。</p>
+<pre><code>\Pi n: Nut. (n > 2 -> \Pi x,y,z: Nut. x^n + y^n != z^n)
+</code></pre>
+<p>ここで <code>_ > _</code> は依存型。普通だね。</p>
+<p>話を戻す（ラノベだったらここで閑話休題って言ってた）。オブジェクトと抽象化の話をしていたのだった。オブジェクト指向では、分類を動的な性質としてみるきらいがありそう。それに対して関数型っぽい世界では、分類は静的にできる型判断でしかないイメージ。型によって動的な振る舞いは変わったり変わらなかったりするけど、とりあえず型は静的につけるものだと思う。その情報を実行時まで持ち越すかは好きにすればいい、くらい。</p>
+<h3 id="お気持ち" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;">お気持ち</h3>
+<p>動的メソッドディスパッチはいまだにしっくりこないし、メタプログラミングに関しては勝手にやってくれって思ってしまう。</p>
+<h2 id="hugoについて" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;">Hugoについて</h2>
+<p>ディレクトリの構造で投稿の分類を決めるのはよくないと思う。分類なんて書いているうちに変わるのだし、その方が便利そうなので全てはフロントマターにお任せしてしまえばいいと思った次第。そんなこという子はhugoユーザには要らないのだろうから、そのうち独立するのがいいんだろうな。</p>
+<h2 id="今日は7月5日" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;">今日は7月5日</h2>
+<p>明後日が七夕だ。花金なので会社の人と七夕のみをできるかもしれない。</p>
+<h3 id="七夕のみ" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;">七夕のみ</h3>
+<p>七夕は織姫と彦星が一年に一回逢瀬を重ねられる日。天の川に橋がかかるんだったか川の水が引くんだったかで会える。ここでは皮の水が引く説を採用する。</p>
+<p>旧暦では時期的に川の水が引いたかもしれないが、現代では7月の頭はまだまだ梅雨みたいなもので川は元気だ。このままでは織姫と彦星は約束の日に会えない。かわいそう。なのでいつも夏の大三角に心を癒してもらっている僕たちは、せめてもの恩返しに川を飲み干して、逢瀬を支援することにした。これが七夕のみ。幸いなことに梅雨の雨で薄まった川はアルコール度数が比較的低く、ほろ酔いくらいのイメージ。だからこの日は梅雨がもたらす潤沢な量のほろ酔いを飲む。</p>
+<h2 id="エンジニアリングの幸せ" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;">エンジニアリングの幸せ</h2>
+<p>エンジニアリングは手段でしかないと今は本心で思っている。とはいえ、プログラミングやエンジニアリングをしていて幸せを感じるタイミングもある。このギャップはエンジニアリングの成果を確かめることにあると思う。</p>
+<p>例えば家に電気が通っていることは感動的なことだと頭ではわかるが、その恩恵を享受することは特に幸せだとは思わない。それに対して、新しくプログラミング言語を学んで、これまではできなかった表現でこれまではできなかった解決策を実現するのはとんでもなく楽しい。さらにはこれまでは明らかではなかった解決の方法を明らかにするのは結構な幸せだ。</p>
+<p>このギャップは成果を確かめること、差分を観測することにあると思う。微分係数が大きいときが一番やりがいを感じる、みたいな話に通じる気がする。</p>
+<h2 id="今日良かったこと" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;">今日良かったこと</h2>
+<ul>
+<li>会社の人の親切に触れたこと
+<ul>
+<li>一人だけじゃなくて4,5人くらい</li>
+</ul>
+</li>
+<li>会社じゃない知り合いとちょっと仲良くなれたこと</li>
+<li>ラフロイグがおいしいこと</li>
+<li>オブジェクト指向の話が面白かったこと</li>
+<li>権八に行けたこと</li>
+</ul>
+<h2 id="あとがき" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;">あとがき</h2>
+<p>こんなしょうもないことを書いていたせいで、今日の元気が終わってしまった。ラフロイグに完敗。またこんなことをインターネットで公開するおかげで恥の概念がなくなってきた。これは良し悪しありそう。</p>2:[["$","article",null,{"children":[["$","h1",null,{"children":"2023-07-05"}],["$","time",null,{"children":"2023-07-05T22:19:47+09:00"}],["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$8"}}]]}],["$","span",null,{"style":{"marginInline":"5px"},"children":["$","a",null,{"href":"/posts/2023-07-02","children":"< 2023-07-02"}]}],["$","span",null,{"style":{"marginInline":"5px"},"children":["$","a",null,{"href":"/posts/2023-07-06","children":"2023-07-06 >"}]}]]
+7:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"2023-07-05 | diary.nfurudono.com"}],["$","meta","3",{"name":"description","content":"プロトタイプベースのオブジェクト指向言語について、哲学の方面から議論したエッセイを読んだ。クラスベースなのは古典的なアリストテレス的な分類の考え方に基づくもので、プロトタイプベースなものはヴィトゲンシュタインっぽい考え方に基づくとのこと。"}],["$","link","4",{"rel":"author","href":"https://blog.nfurudono.com/profile/"}],["$","meta","5",{"name":"author","content":"Naoya Furudono"}]]
+1:null

@@ -1,0 +1,62 @@
+3:I[4707,[],""]
+5:I[6423,[],""]
+6:I[2972,["972","static/chunks/972-f708ded502b3627d.js","185","static/chunks/app/layout-aa1129b13619db0b.js"],""]
+4:["id","2023-09-13","d"]
+0:["N2S61W7SgBtvfjyLIwY7-",[[["",{"children":["posts",{"children":[["id","2023-09-13","d"],{"children":["__PAGE__?{\"id\":\"2023-09-13\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["posts",{"children":[["id","2023-09-13","d"],{"children":["__PAGE__",{},[["$L1","$L2",null],null],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[[null,["$","html",null,{"lang":"ja","children":[["$","style",null,{"children":"\n[id] {\n  border: 2px solid transparent; /* 初期のボーダー */\n  transition: all 0.3s ease; /* トランジション効果 */\n  cursor: pointer; /* カーソルをポインタにする */\n}\n\n[id]:hover {\n  background-color: #f0f0f0; /* 背景色を変更 */\n  border-color: #007bff; /* ボーダーの色を変更 */\n  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* シャドウを追加 */\n}\n\n[id]:focus {\n  outline: none; /* デフォルトのアウトラインを消す */\n  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* フォーカス時の影を追加 */\n}\n\t\t"}],["$","body",null,{"children":[["$","header",null,{"children":["$","nav",null,{"children":["$","ul",null,{"children":[["$","li","/",{"children":["$","$L6",null,{"href":"/","children":"diary.nfurudono.com"}]}],["$","li","/todos/",{"children":["$","$L6",null,{"href":"/todos/","children":"todos"}]}],["$","li","https://twitter.com/furudono2",{"children":["$","$L6",null,{"href":"https://twitter.com/furudono2","children":"書いてる人のTwitter"}]}],["$","li","https://zenn.dev/nfurudono",{"children":["$","$L6",null,{"href":"https://zenn.dev/nfurudono","children":"最近の技術記事（Zenn、試しに使っています）"}]}],["$","li","https://blog.nfurudono.com",{"children":["$","$L6",null,{"href":"https://blog.nfurudono.com","children":"技術記事"}]}]]}]}]}],["$","main",null,{"children":["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[]}]}],["$","footer",null,{"children":["$","nav",null,{"children":["$","ul",null,{"children":[["$","li","/",{"children":["$","$L6",null,{"href":"/","children":"diary.nfurudono.com"}]}],["$","li","/todos/",{"children":["$","$L6",null,{"href":"/todos/","children":"todos"}]}],["$","li","https://twitter.com/furudono2",{"children":["$","$L6",null,{"href":"https://twitter.com/furudono2","children":"書いてる人のTwitter"}]}],["$","li","https://zenn.dev/nfurudono",{"children":["$","$L6",null,{"href":"https://zenn.dev/nfurudono","children":"最近の技術記事（Zenn、試しに使っています）"}]}],["$","li","https://blog.nfurudono.com",{"children":["$","$L6",null,{"href":"https://blog.nfurudono.com","children":"技術記事"}]}]]}]}]}]]}]]}]],null],null],["$L7",null]]]]
+8:T15aa,<h2 id="気づき" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;">気づき</h2>
+<p>今家のトイレで気がついてんですが、冷蔵庫と自分の体にはどんな落書きしても人に迷惑かけないので落書きし放題です！！何書こうかな...。</p>
+<p>人生楽しくなってきた。今度人生つらそうな人を見たらこれを教えてあげつつ、鏡のある場所を教えつつ、マッキーをプレゼントしよう。</p>
+<h2 id="ウイスキーうまい" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;">ウイスキーうまい</h2>
+<p>ちょっと前に買ったbowmoreが美味しい。味の表現はさておき美味しいからそれでいいんです。テイスティンググラスでストレートで飲んでいます。aged 12 yearsと書いてあります。</p>
+<p>350ml瓶を買ったんですが、このサイズの便が一番かっこいいです。他のサイズでかっこいいのはフロムザバレルくらい？</p>
+<p>350のbowmoreはリュックの横に挿してもいいかなというくらいかっこいい。</p>
+<h2 id="久しぶりの苗字呼び" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;">久しぶりの苗字呼び</h2>
+<p>会社ではあだ名で呼ぶ文化がある。それはなかなか楽しくて好きなんだけど、人生のほとんどを苗字呼びの文化で過ごしてきて、会社の飲み会で苗字よびをしてもらって、「ああ、こんな感じだったな」と昔の感覚を思い出した。新しく上の人から苗字呼びされる経験は僕にとって深いところに刻まれた体験なのかもしれない。</p>
+<p>ホッピー師匠とも知り合えたことだし、今日の飲み会は僕にとっていいものだった。明日は走って帰るか。判断は夜にするとして、ランニングシューズを履いて、ジャージを持って出勤する。</p>
+<h2 id="夢花火" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;">夢花火</h2>
+<p>まふまふの夢花火を久しぶりに聴いている。中学生に頃に友達にまふまふのCDを貸してもらって夢花火をしり、高校までめざましは夢花火だった。懐かしい思い出。</p>
+<p>去年の暮れに会社の同僚がまふまふファンだと聞きちょっとテンションが上がったことを思い出した。今はまふまふの他にもdazbeeやado、co shu nieとかのアーティストが好き。オタクって感じがする。</p>
+<p>オタクっぽくない歌手っているかと思うと、どのアーティストもそのアーティストが好きというと途端にオタクぽくなる気がするので気にすることではなさそう。AKBもSMAPもheysayjumpも何もかも、アーティストが好きって言ったらおタックぽい気がする。</p>
+<p>オタクっぽさを排除して「この曲が好き」みたいなことを表明しようと思うと、自身の音楽性に芯があるか流行りに乗っていくミーハーみたいになりそう。</p>
+<p>そろそろ世間体について考えるのに疲れてきた。このくらいにしよう。僕がコモンセンスとして取れている自信を持っているのは、新劇場版のエヴァの最後のやつで「よかったねぇ」と思えたことです。ATフィールドは全ての人の間にあると思っているタイプの人間です。よろしくお願いします。</p>
+<h2 id="オフィスカジュアル" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;">オフィスカジュアル</h2>
+<p>オフィスカジュアルっていうのやめません？曖昧で、インターフェースで要求しているような感じがしつつ、実装する側にはその要件が伝わらない。コミュニケーションのための符号としてあまり良く機能していないように見える。</p>
+<ul>
+<li>ジャケット</li>
+<li>シャツ</li>
+<li>靴</li>
+<li>パンツ</li>
+</ul>
+<p>以上の四つについての要求を書いて欲しい気持ちが芽生えた。これらが指定されない限りは、どれだけフォーマルに寄っても、喪服まで行かない限りは文句言えないと思うし、喪服まで行かなくても服を着てくる側に対して不親切だろう。</p>2:[["$","article",null,{"children":[["$","h1",null,{"children":"2023-09-13"}],["$","time",null,{"children":"2023-09-13T23:22:32+09:00"}],["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$8"}}]]}],["$","span",null,{"style":{"marginInline":"5px"},"children":["$","a",null,{"href":"/posts/2023-09-12","children":"< 2023-09-12"}]}],["$","span",null,{"style":{"marginInline":"5px"},"children":["$","a",null,{"href":"/posts/2023-09-19","children":"2023-09-19 >"}]}]]
+7:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"2023-09-13 | diary.nfurudono.com"}],["$","meta","3",{"name":"description","content":"今家のトイレで気がついてんですが、冷蔵庫と自分の体にはどんな落書きしても人に迷惑かけないので落書きし放題です！！何書こうかな...。"}],["$","link","4",{"rel":"author","href":"https://blog.nfurudono.com/profile/"}],["$","meta","5",{"name":"author","content":"Naoya Furudono"}]]
+1:null

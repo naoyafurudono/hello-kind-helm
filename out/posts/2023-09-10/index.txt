@@ -1,0 +1,79 @@
+3:I[4707,[],""]
+5:I[6423,[],""]
+6:I[2972,["972","static/chunks/972-f708ded502b3627d.js","185","static/chunks/app/layout-aa1129b13619db0b.js"],""]
+4:["id","2023-09-10","d"]
+0:["N2S61W7SgBtvfjyLIwY7-",[[["",{"children":["posts",{"children":[["id","2023-09-10","d"],{"children":["__PAGE__?{\"id\":\"2023-09-10\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["posts",{"children":[["id","2023-09-10","d"],{"children":["__PAGE__",{},[["$L1","$L2",null],null],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[[null,["$","html",null,{"lang":"ja","children":[["$","style",null,{"children":"\n[id] {\n  border: 2px solid transparent; /* 初期のボーダー */\n  transition: all 0.3s ease; /* トランジション効果 */\n  cursor: pointer; /* カーソルをポインタにする */\n}\n\n[id]:hover {\n  background-color: #f0f0f0; /* 背景色を変更 */\n  border-color: #007bff; /* ボーダーの色を変更 */\n  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* シャドウを追加 */\n}\n\n[id]:focus {\n  outline: none; /* デフォルトのアウトラインを消す */\n  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* フォーカス時の影を追加 */\n}\n\t\t"}],["$","body",null,{"children":[["$","header",null,{"children":["$","nav",null,{"children":["$","ul",null,{"children":[["$","li","/",{"children":["$","$L6",null,{"href":"/","children":"diary.nfurudono.com"}]}],["$","li","/todos/",{"children":["$","$L6",null,{"href":"/todos/","children":"todos"}]}],["$","li","https://twitter.com/furudono2",{"children":["$","$L6",null,{"href":"https://twitter.com/furudono2","children":"書いてる人のTwitter"}]}],["$","li","https://zenn.dev/nfurudono",{"children":["$","$L6",null,{"href":"https://zenn.dev/nfurudono","children":"最近の技術記事（Zenn、試しに使っています）"}]}],["$","li","https://blog.nfurudono.com",{"children":["$","$L6",null,{"href":"https://blog.nfurudono.com","children":"技術記事"}]}]]}]}]}],["$","main",null,{"children":["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[]}]}],["$","footer",null,{"children":["$","nav",null,{"children":["$","ul",null,{"children":[["$","li","/",{"children":["$","$L6",null,{"href":"/","children":"diary.nfurudono.com"}]}],["$","li","/todos/",{"children":["$","$L6",null,{"href":"/todos/","children":"todos"}]}],["$","li","https://twitter.com/furudono2",{"children":["$","$L6",null,{"href":"https://twitter.com/furudono2","children":"書いてる人のTwitter"}]}],["$","li","https://zenn.dev/nfurudono",{"children":["$","$L6",null,{"href":"https://zenn.dev/nfurudono","children":"最近の技術記事（Zenn、試しに使っています）"}]}],["$","li","https://blog.nfurudono.com",{"children":["$","$L6",null,{"href":"https://blog.nfurudono.com","children":"技術記事"}]}]]}]}]}]]}]]}]],null],null],["$L7",null]]]]
+8:T19b9,<h2 id="疲れの自覚" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;">疲れの自覚</h2>
+<p>昨日は大会運営の準備で一日外にいた。楽しいので後悔はないのだけど、だいぶ疲れて今日の夕方になったのにまだ疲れてぐたっとしている。</p>
+<p>僕は疲れに気が付きにくいようで、周りが疲れたと言っていたり、翌日ダメージが残るよう場合でも、そのときは特に気が付かない。パフォーマンスには影響していると思うのだけど、気持ちは疲れていないので実際どれくらい疲れているかはわからない。酔っているとか深夜テンションとかみたいな感じに普段からなってしまうのだろう。</p>
+<p>疲れや体調不良に鈍感なのは、子供の頃からずっと変わらない気がする。やる気が出ないのと体調が悪いのの区別はずっとつかない。一度インフルエンザにかかったとき、病院にかかったりする前に塾に行きたくなさすぎて、だるいと言って仮病を使ったら仮病じゃなかったことがある。その他にもなんか調子が出ないと思ったら花粉がすごい飛んでいた、みたいなことはよくある。</p>
+<p>こういうことを書くと、やる気が出ないときは体調不良を疑おう、みたいな学びを得たくなるのだけど、単にめんどくさくてやる気が出ないことの方が僕は多いので、そんな甘えた学びを得てしまうと色々立ち行かなくなる（経験済み）。</p>
+<p>今のところの付き合い方は以下の通り。</p>
+<ul>
+<li>原因が明らかにわかっているだるさがあるときは、自分を甘やかすことにして、</li>
+<li>よくわからんけどだるいときは、寝る、走る、食べる、手を動かすを試してみる。</li>
+<li>大抵は手を動かすと動き出すのだが、それでもダメなら人と喋ったり病院いくのが良いだろう</li>
+</ul>
+<h2 id="vscodeで使うフォントをインストールした" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;">VSCodeで使うフォントをインストールした</h2>
+<p>今日は疲れているのにVSCodeで使うフォントをノートパソコンにインストールした。とても偉い。これでターミナルの一部でレイアウトが壊れていたのが直った。やったーー。</p>
+<h2 id="ちんぐを飲んでる" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;">ちんぐを飲んでる</h2>
+<p>5月くらいに秋吉台に行ってロゲインしたときに買ったちんぐを飲んでいる。ちんぐは麦焼酎で、黒麹を使っているのが特徴。</p>
+<p>ちんぐは親友という意味らしいのだが、あのとき一緒に行った友達とはしばらく会っていない。元気だろうか。</p>
+<h2 id="チャットでメンションと飛ばす場所" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;">チャットでメンションと飛ばす場所</h2>
+<p>SlackとかDiscordみたいなチャットで議論の最中に、議論に参加していない人に質問とかしたくなる。そのときどこでメンションを飛ばすか選択肢があるけど、議論の場でメンション飛ばす形で召喚するのがいいよなと思った話をする。</p>
+<p>選択肢としてはいかがありそう。</p>
+<ul>
+<li>議論の場</li>
+<li>DM</li>
+<li>その人がよく出没するチャンネル</li>
+<li>LINE、電話、メールなどの違う媒体</li>
+</ul>
+<p>相手に文脈を理解する余地を残すためにも、議論の場に呼ぶのが誠意なんじゃないかと思っている。</p>
+<h2 id="returnの型規則" onclick="
+          event.preventDefault();
+          const url = window.location.origin + window.location.pathname + &#x27;#&#x27; + this.id;
+          navigator.clipboard.writeText(url).then(_ => {
+            window.location.href = url;
+          })
+        " style="cursor: pointer;">returnの型規則</h2>
+<p>今日久しぶりに静的型付けな言語（Rust）を書いて、match式は書くブランチの型が一致しないといけないことを思い出して、じゃあreturnする場合はどんな型をつけるんだ、と思ったので型規則を定義するならこんなふうになるんだろうなと想像してみる。</p>
+<p>returnがあるってことは、関数があるということだ。その関数の返り値の型とreturnの部分式の型が一致しないといけないはずだ。これをトラックするために、型は3項関係ではなく、今の関数の返り値型を表す項が必要なはず。</p>
+<p>型規則では、次のような関係を定義すれば良さそう。$\Gamma \vdash e : \tau | r$ ここで $r$ は今の関数定義の返り値の型。</p>
+<p>関数定義では、次のような感じになるだろう。</p>
+<pre><code>G, x: t1 |- e: t2 | t2
+-------------------------------- (fun)
+G |- lam x: t1. e: t1 -> t2 | r
+</code></pre>
+<p>そしてreturn式はこんな感じだ。</p>
+<pre><code>G |- e: r | r
+--------------------- (return)
+G |- return e: t | r
+</code></pre>
+<p>こうすることで、returnに任意の型をつけられるので、フランクにブランチの末尾でreturnできる。任意の型ではなくてユニット型とかを不用意につけるとearly returnをしにくくなったりしそう。</p>
+<p>書いてみると意外と単純だった。本当にこれでうまくいくかは知らないけれど。</p>2:[["$","article",null,{"children":[["$","h1",null,{"children":"2023-09-10"}],["$","time",null,{"children":"2023-09-10T16:48:32+09:00"}],["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$8"}}]]}],["$","span",null,{"style":{"marginInline":"5px"},"children":["$","a",null,{"href":"/posts/2023-09-09","children":"< 2023-09-09"}]}],["$","span",null,{"style":{"marginInline":"5px"},"children":["$","a",null,{"href":"/posts/2023-09-12","children":"2023-09-12 >"}]}]]
+7:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"2023-09-10 | diary.nfurudono.com"}],["$","meta","3",{"name":"description","content":"昨日は大会運営の準備で一日外にいた。楽しいので後悔はないのだけど、だいぶ疲れて今日の夕方になったのにまだ疲れてぐたっとしている。"}],["$","link","4",{"rel":"author","href":"https://blog.nfurudono.com/profile/"}],["$","meta","5",{"name":"author","content":"Naoya Furudono"}]]
+1:null
